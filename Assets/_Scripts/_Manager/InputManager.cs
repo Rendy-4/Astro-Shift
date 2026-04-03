@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using AstroShift.Player;
 
 namespace AstroShift.Manager
@@ -9,7 +10,7 @@ namespace AstroShift.Manager
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
             {
                 Player.SwitchGravity();
             }

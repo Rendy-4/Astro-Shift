@@ -351,7 +351,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 1152
+        y: 1158
         width: 30
         height: 45
       alignment: 0
@@ -369,33 +369,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: players blue x3_4
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 1056
-        width: 30
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e699197f1fa57da30800000000000000
-      internalID: 4239957569479743854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: players blue x3_5
       rect:
         serializedVersion: 2
         x: 129
-        y: 1056
+        y: 1062
         width: 30
         height: 45
       alignment: 0
@@ -505,7 +483,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 960
+        y: 966
         width: 33
         height: 51
       alignment: 0
@@ -527,7 +505,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 321
-        y: 960
+        y: 966
         width: 33
         height: 51
       alignment: 0
@@ -549,7 +527,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 417
-        y: 960
+        y: 966
         width: 33
         height: 51
       alignment: 0
@@ -681,7 +659,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 960
+        y: 966
         width: 30
         height: 45
       alignment: 0
@@ -703,7 +681,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 225
-        y: 960
+        y: 966
         width: 33
         height: 45
       alignment: 0
@@ -747,7 +725,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 864
+        y: 870
         width: 30
         height: 45
       alignment: 0
@@ -791,7 +769,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 321
-        y: 864
+        y: 870
         width: 30
         height: 45
       alignment: 0
@@ -923,7 +901,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 123
-        y: 768
+        y: 774
         width: 33
         height: 63
       alignment: 0
@@ -945,7 +923,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 225
-        y: 768
+        y: 774
         width: 33
         height: 51
       alignment: 0
@@ -1055,7 +1033,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 27
-        y: 768
+        y: 774
         width: 54
         height: 45
       alignment: 0
@@ -1077,7 +1055,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 321
-        y: 768
+        y: 774
         width: 45
         height: 45
       alignment: 0
@@ -1297,7 +1275,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 672
+        y: 678
         width: 51
         height: 45
       alignment: 0
@@ -1534,6 +1512,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: players blue x3_57
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1062
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df4168ecef19424481b6dc5f77af70b
+      internalID: -2108679593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1603,6 +1603,7 @@ TextureImporter:
       players blue x3_54: -7395615310116877317
       players blue x3_55: -686427411223513918
       players blue x3_56: 1313471436289405150
+      players blue x3_57: -2108679593
       players blue x3_6: -7165415574533484734
       players blue x3_7: 6235643895281503777
       players blue x3_8: -4395171304231744949
