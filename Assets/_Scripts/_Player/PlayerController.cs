@@ -1,14 +1,18 @@
 using UnityEngine;
+using DG.Tweening;
 
 namespace AstroShift.Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerController : MonoBehaviour, IDamageable
     {
+        [Header("Gravity Settings")]
+        [SerializeField] private float flipDuration = 1f; // Skala gravitasi awal
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 8f; // Kecepatan lari otomatis
         
         private Rigidbody2D rb;
+        private bool isFlipping = false; // Menandakan apakah sedang dalam proses membalik gravitasi
 
         private void Awake()
         {
@@ -31,10 +35,14 @@ namespace AstroShift.Player
 
         public void SwitchGravity()
         {
-            // Membalikkan arah gravitasi dengan mengubah nilai gravityScale
-            rb.gravityScale *= -1;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Reset kecepatan vertikal agar tidak terlalu cepat saat membalik
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * -1, transform.localScale.z); // Membalik skala Y untuk membalik sprite
+            isFlipping = !isFlipping; // Toggle status membalik
+            rb.gravityScale = isFlipping ? 1 : -1; // Ubah arah gravitasi
+
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Reset kecepatan vertikal saat membalik
+
+            float targetRotation = isFlipping ? 0f : 180f; // Rotasi target berdasarkan status membalik
+
+            transform.DORotate(new Vector3(targetRotation, 0, 0), flipDuration).SetEase(Ease.InOutSine); // Animasi rotasi dengan DOTween
         }
 
         public void Die()
