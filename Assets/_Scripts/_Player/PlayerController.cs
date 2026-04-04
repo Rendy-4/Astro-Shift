@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 namespace AstroShift.Player
 {
@@ -8,6 +9,8 @@ namespace AstroShift.Player
     {
         [Header("Gravity Settings")]
         [SerializeField] private float flipDuration = 1f; // Skala gravitasi awal
+        [SerializeField] private Transform charVisual; // Referensi ke visual karakter untuk rotasi
+
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 8f; // Kecepatan lari otomatis
         
@@ -17,6 +20,9 @@ namespace AstroShift.Player
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
+        }
+        private void Start() {
+            isFlipping = rb.gravityScale > 0; // Tentukan status membalik berdasarkan gravitasi awal
         }
 
         private void FixedUpdate()
@@ -34,22 +40,35 @@ namespace AstroShift.Player
         }
 
         public void SwitchGravity()
-        {
-            isFlipping = !isFlipping; // Toggle status membalik
-            rb.gravityScale = isFlipping ? 1 : -1; // Ubah arah gravitasi
+    {
+        // Daripada pakai bool manual, langsung balikkan saja nilai gravityScale yang ada
+        rb.gravityScale *= -1;
+    
+        // Update status isFlipping berdasarkan gravityScale terbaru
+        isFlipping = rb.gravityScale > 0; 
+    
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
 
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Reset kecepatan vertikal saat membalik
-
-            float targetRotation = isFlipping ? 0f : 180f; // Rotasi target berdasarkan status membalik
-
-            transform.DORotate(new Vector3(targetRotation, 0, 0), flipDuration).SetEase(Ease.InOutSine); // Animasi rotasi dengan DOTween
-        }
+        // Tentukan rotasi dan flip berdasarkan isFlipping yang sudah sinkron
+        float targetRotation = isFlipping ? 0f : 180f;
+        float targetFlip = isFlipping ? 1f : -1f;
+    
+        // Tambahkan .SetLink(gameObject) untuk menghilangkan warning DOTween yang tadi
+        charVisual.DORotate(new Vector3(0, 0, targetRotation), flipDuration)
+            .SetEase(Ease.InOutSine)
+            .SetLink(gameObject); 
+    
+        charVisual.DOScaleX(targetFlip, flipDuration)
+            .SetEase(Ease.InOutSine)
+            .SetLink(gameObject);
+    }
 
         public void Die()
         {
             // Logika kematian, misalnya memulai ulang level atau menampilkan efek kematian
-            Debug.Log("Player mati!");
-            // Di sini kamu bisa menambahkan logika untuk mengurangi nyawa, memulai ulang level, atau efek kematian lainnya
+            Debug.Log("Player mati!, memulai ulang level...");
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Memulai ulang level saat player mati
         }
         
     }
