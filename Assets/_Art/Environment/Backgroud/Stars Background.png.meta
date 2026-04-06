@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: ffbbfde9c03cb18409a53488b6277abd
+guid: d617a542b23e4e142950ded50893abd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1738974222130833291
-    second: tileset x1_0
+      213: -8370138389232967716
+    second: Stars Background_0
   - first:
-      213: 2404977850801086038
-    second: tileset x1_1
+      213: 7926746527719626598
+    second: Stars Background_1
   - first:
-      213: -5196275269915443376
-    second: tileset x1_2
+      213: -774149055498158700
+    second: Stars Background_2
   - first:
-      213: 4455742111740492130
-    second: tileset x1_3
+      213: -4057338911697759048
+    second: Stars Background_3
   - first:
-      213: 1676759398021918690
-    second: tileset x1_4
+      213: 4570262440771244770
+    second: Stars Background_4
   - first:
-      213: 4987971441728776048
-    second: tileset x1_5
+      213: -6674510574286881915
+    second: Stars Background_5
   - first:
-      213: 5462040446442670737
-    second: tileset x1_6
+      213: -2064017469692667703
+    second: Stars Background_6
   - first:
-      213: 3744478203028765931
-    second: tileset x1_7
-  - first:
-      213: -9059957232838284037
-    second: tileset x1_8
-  - first:
-      213: 1375230208061749674
-    second: tileset x1_9
+      213: 2597520743810010619
+    second: Stars Background_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,21 +58,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -140,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tileset x1_0
+      name: Stars Background_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 383
-        width: 353
-        height: 353
+        y: 161
+        width: 39
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b876baf67d3122810800000000000000
-      internalID: 1738974222130833291
+      spriteID: cdf98ec5b7b47db80800000000000000
+      internalID: -8370138389232967716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_1
+      name: Stars Background_1
       rect:
         serializedVersion: 2
-        x: 383
-        y: 671
-        width: 34
-        height: 34
+        x: 59
+        y: 173
+        width: 13
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65e5ea9fc92306120800000000000000
-      internalID: 2404977850801086038
+      spriteID: 6671a4128f5710e60800000000000000
+      internalID: 7926746527719626598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_2
+      name: Stars Background_2
       rect:
         serializedVersion: 2
-        x: 423
-        y: 607
-        width: 58
-        height: 98
+        x: 78
+        y: 0
+        width: 122
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05ffa8d4c2f13e7b0800000000000000
-      internalID: -5196275269915443376
+      spriteID: 49df3df198ba145f0800000000000000
+      internalID: -774149055498158700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_3
+      name: Stars Background_3
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 639
-        width: 99
-        height: 66
+        x: 4
+        y: 0
+        width: 75
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2697a05d7d9f5dd30800000000000000
-      internalID: 4455742111740492130
+      spriteID: 8b492eaa1cf61b7c0800000000000000
+      internalID: -4057338911697759048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_4
+      name: Stars Background_4
       rect:
         serializedVersion: 2
-        x: 383
-        y: 607
-        width: 34
-        height: 34
+        x: 61
+        y: 108
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2efe4e4e9cb054710800000000000000
-      internalID: 1676759398021918690
+      spriteID: 2e2da70c975dc6f30800000000000000
+      internalID: 4570262440771244770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_5
+      name: Stars Background_5
       rect:
         serializedVersion: 2
-        x: 427
-        y: 581
-        width: 9
-        height: 22
+        x: 82
+        y: 121
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 077690e4995d83540800000000000000
-      internalID: 4987971441728776048
+      spriteID: 58bba0aeeff5f53a0800000000000000
+      internalID: -6674510574286881915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_6
+      name: Stars Background_6
       rect:
         serializedVersion: 2
-        x: 383
-        y: 479
-        width: 58
-        height: 98
+        x: 93
+        y: 89
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19a080fc8d01dcb40800000000000000
-      internalID: 5462040446442670737
+      spriteID: 9c894c40c032b53e0800000000000000
+      internalID: -2064017469692667703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x1_7
+      name: Stars Background_7
       rect:
         serializedVersion: 2
-        x: 447
-        y: 543
-        width: 34
-        height: 34
+        x: 141
+        y: 20
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,52 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: becf8b8261f07f330800000000000000
-      internalID: 3744478203028765931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset x1_8
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 524
-        width: 22
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfc617006e0944280800000000000000
-      internalID: -9059957232838284037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset x1_9
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 479
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa938e3869cc51310800000000000000
-      internalID: 1375230208061749674
+      spriteID: bfd018faa5f3c0420800000000000000
+      internalID: 2597520743810010619
       vertices: []
       indices: 
       edges: []
@@ -363,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -373,16 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tileset x1_0: 1738974222130833291
-      tileset x1_1: 2404977850801086038
-      tileset x1_2: -5196275269915443376
-      tileset x1_3: 4455742111740492130
-      tileset x1_4: 1676759398021918690
-      tileset x1_5: 4987971441728776048
-      tileset x1_6: 5462040446442670737
-      tileset x1_7: 3744478203028765931
-      tileset x1_8: -9059957232838284037
-      tileset x1_9: 1375230208061749674
+      Stars Background_0: -8370138389232967716
+      Stars Background_1: 7926746527719626598
+      Stars Background_2: -774149055498158700
+      Stars Background_3: -4057338911697759048
+      Stars Background_4: 4570262440771244770
+      Stars Background_5: -6674510574286881915
+      Stars Background_6: -2064017469692667703
+      Stars Background_7: 2597520743810010619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
