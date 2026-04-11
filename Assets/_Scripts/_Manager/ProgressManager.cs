@@ -1,54 +1,73 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using AstroShift.Player;
 
 namespace AstroShift.Manager
 {
     public class ProgressManager : MonoBehaviour
     {
         [Header("Progress Settings")]
-        [SerializeField] private TextMeshProUGUI progressText; // Referensi ke UI Text untuk menampilkan progress
-        [SerializeField] private Transform playerTransform; // Referensi ke transformasi player
-        [SerializeField] private Image progressBar; // Referensi ke UI Image untuk menampilkan progress bar
+        [SerializeField] private TextMeshProUGUI progressText;
+        [SerializeField] private Transform playerTransform;
+        [SerializeField] private Image progressBar;
         
         [Header("Level Settings")]
-        [SerializeField] private float levelLength = 100f; // Panjang level untuk menghitung progress
+        [SerializeField] private GameObject levelEndPoint;
+        private float levelLength;
+        private float startPosX;
+        private bool isFinished = false; // TAMBAHKAN INI agar tidak error di Update
 
-        private float startPosX; // Posisi awal player pada sumbu X
+        [Header("End Screen")]
+        [SerializeField] private GameObject endScreen;
 
         void Start()
         {
             if (playerTransform == null) {
-                playerTransform = GameObject.FindGameObjectWithTag("Player").transform; // Mencari player berdasarkan tag jika belum diassign
+                playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
             }
             startPosX = playerTransform.position.x;
+
+            // Hitung levelLength di Start agar tidak 0
+            if (levelEndPoint != null)
+            {
+                levelLength = levelEndPoint.transform.position.x - startPosX;
+            }
         }
 
-        // Update is called once per frame
         void Update()
         {
-            if (playerTransform != null) {
-                // Hitung progress berdasarkan jarak yang ditempuh player dari posisi awal dibandingkan dengan panjang level
-                float distanceTraveled = playerTransform.position.x - startPosX;
-                float progress = Mathf.Clamp01(distanceTraveled / levelLength); // Pastikan progress antara 0 dan 1
+            if (playerTransform != null && !isFinished && levelLength > 0)
+            {
+                float progress = Mathf.Clamp01((playerTransform.position.x - startPosX) / levelLength);
+                progressText.text = $"{(progress * 100f):0}%";
 
-                // Update teks progress di UI
-                progressText.text = Mathf.FloorToInt(progress * 100) + "%";
-                
-                // Update fill amount pada progress bar
-                if (progressBar != null) {
-                    progressBar.fillAmount = progress; // Set fill amount sesuai dengan progress
-                }
-
-                if (progressBar != null) {
+                if (progressBar != null)
+                {
                     progressBar.fillAmount = progress;
-                    // Hapus baris ini setelah tes berhasil
-                    Debug.Log("Progress saat ini: " + progress); 
                 }
             }
+        }
 
-            
+        private void OnTriggerEnter2D(Collider2D other) 
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                FinishLevel();
+            }
+        }
+
+        // PERBAIKAN: Tambahkan kata 'void' di sini
+        private void FinishLevel() 
+        {
+            isFinished = true;
+            Debug.Log("Level Completed!");
+
+            if (endScreen != null)
+            {
+                endScreen.SetActive(true);
+            }
+            Time.timeScale = 0f; 
         }
     }
 }
-
