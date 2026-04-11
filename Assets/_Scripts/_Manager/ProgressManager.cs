@@ -21,8 +21,13 @@ namespace AstroShift.Manager
         [Header("End Screen")]
         [SerializeField] private GameObject endScreen;
 
+        [Header("UI Settings")]
+        [SerializeField] private float smoothTime = 0.3f;
+        private float currentDisplayProgress = 0f;
+
         void Start()
         {
+            Time.timeScale = 1f; // Pastikan waktu berjalan normal saat level dimulai
             if (playerTransform == null) {
                 playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
             }
@@ -40,7 +45,8 @@ namespace AstroShift.Manager
             if (playerTransform != null && !isFinished && levelLength > 0)
             {
                 float progress = Mathf.Clamp01((playerTransform.position.x - startPosX) / levelLength);
-                progressText.text = $"{(progress * 100f):0}%";
+                currentDisplayProgress = Mathf.MoveTowards(currentDisplayProgress, progress,smoothTime * Time.deltaTime);
+                progressText.text = $"{(currentDisplayProgress * 100f):0}%";
 
                 if (progressBar != null)
                 {
@@ -57,16 +63,16 @@ namespace AstroShift.Manager
             }
         }
 
-        // PERBAIKAN: Tambahkan kata 'void' di sini
         private void FinishLevel() 
         {
+            if (isFinished) return; // Cegah pemanggilan ganda
             isFinished = true;
+            currentDisplayProgress = 1f;
             Debug.Log("Level Completed!");
 
-            if (endScreen != null)
-            {
-                endScreen.SetActive(true);
-            }
+            if (progressText != null) progressText.text = "100%";
+            if (progressBar != null) progressBar.fillAmount = 1f;
+            if (endScreen != null) endScreen.SetActive(true);
             Time.timeScale = 0f; 
         }
     }
