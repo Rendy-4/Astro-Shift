@@ -23,19 +23,30 @@ namespace AstroShift.Manager
 
         [Header("UI Settings")]
         [SerializeField] private float smoothTime = 0.3f;
+
+        
         private float currentDisplayProgress = 0f;
 
         void Start()
         {
             Time.timeScale = 1f; // Pastikan waktu berjalan normal saat level dimulai
             if (playerTransform == null) {
-                playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+                GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+                if (playerObj != null) {
+                    playerTransform = playerObj.transform;
+                }
             }
-            startPosX = playerTransform.position.x;
 
-            // Hitung levelLength di Start agar tidak 0
-            if (levelEndPoint != null)
+            GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+            if (spawnPoint != null && playerTransform !=null)
             {
+                playerTransform.position = spawnPoint.transform.position;
+                Debug.Log("Player teleported to spawn point at: " + spawnPoint.transform.position);
+            }
+
+            if (playerTransform != null && levelEndPoint != null)
+            {
+                startPosX = playerTransform.position.x;
                 levelLength = levelEndPoint.transform.position.x - startPosX;
             }
         }
