@@ -507,6 +507,11 @@ Transform:
   - {fileID: 1767566855}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1538333806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6330041426911625643, guid: efb9c86a127580a40a5e259c7510f139, type: 3}
+  m_PrefabInstance: {fileID: 598975494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1767566854
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,13 +790,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2036022680}
     - target: {fileID: 5196630214505047744, guid: b86977d78ed561d418340a4c5e88c1a2, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 1538333806}
+    - target: {fileID: 5196630214505047744, guid: b86977d78ed561d418340a4c5e88c1a2, type: 3}
       propertyPath: progressText
       value: 
       objectReference: {fileID: 936864715}
     - target: {fileID: 5196630214505047744, guid: b86977d78ed561d418340a4c5e88c1a2, type: 3}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 9021987834189110801, guid: efb9c86a127580a40a5e259c7510f139, type: 3}
+      objectReference: {fileID: 842693835}
     - target: {fileID: 5292001593106169797, guid: b86977d78ed561d418340a4c5e88c1a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.67

@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using AstroShift.Player;
 
 namespace AstroShift.Manager
@@ -22,13 +23,21 @@ namespace AstroShift.Manager
         [SerializeField] private GameObject endScreen;
 
         [Header("UI Settings")]
-        [SerializeField] private float smoothTime = 0.3f;
+        [SerializeField] private float smoothTime = 5f;
 
         [Header("Player Settings")]
         [SerializeField] private GameObject playerPrefab;
 
         
         private float currentDisplayProgress = 0f;
+
+        private void Awake() {
+            if (progressText == null) progressText = GameObject.Find("Score Text")?.GetComponent<TextMeshProUGUI>();
+            if (progressBar == null) progressBar = GameObject.Find("Mask")?.GetComponent<Image>();
+            if (endScreen == null) endScreen = GameObject.Find("Level End Screen");
+            if (playerPrefab == null) playerPrefab = GameObject.Find("Player Container"); // Pastikan prefab ada di folder Resources
+            
+        }
 
         void Start()
         {
@@ -98,6 +107,16 @@ namespace AstroShift.Manager
             isFinished = true;
             currentDisplayProgress = 1f;
             Debug.Log("Level Completed!");
+
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+            if (currentSceneIndex >= unlockedLevel)
+            {
+                PlayerPrefs.SetInt("UnlockedLevel", currentSceneIndex + 1);
+                PlayerPrefs.Save();
+            }
+            
 
             if (progressText != null) progressText.text = "100%";
             if (progressBar != null) progressBar.fillAmount = 1f;
