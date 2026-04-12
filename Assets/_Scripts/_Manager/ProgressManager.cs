@@ -24,33 +24,51 @@ namespace AstroShift.Manager
         [Header("UI Settings")]
         [SerializeField] private float smoothTime = 0.3f;
 
+        [Header("Player Settings")]
+        [SerializeField] private GameObject playerPrefab;
+
         
         private float currentDisplayProgress = 0f;
 
         void Start()
         {
-            Time.timeScale = 1f; // Pastikan waktu berjalan normal saat level dimulai
-            if (playerTransform == null) {
-                GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-                if (playerObj != null) {
-                    playerTransform = playerObj.transform;
-                }
-            }
+            Time.timeScale = 1f;
 
             GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-            if (spawnPoint != null && playerTransform !=null)
+            
+            // Cari player yang sudah ada di scene dulu
+            if (playerTransform == null)
             {
+                GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
+                if (existingPlayer != null)
+                    playerTransform = existingPlayer.transform;
+            }
+
+            // Kalau masih null, spawn dari prefab
+            if (playerTransform == null && playerPrefab != null && spawnPoint != null)
+            {
+                GameObject playerObj = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
+                playerTransform = playerObj.transform; // ← Assign transform-nya!
+            }
+
+            // Teleport ke spawn point
+            if (spawnPoint != null && playerTransform != null)
+            {
+                Rigidbody2D rb = playerTransform.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.position = spawnPoint.transform.position;
+                    rb.linearVelocity = Vector2.zero;
+                    rb.angularVelocity = 0f;
+                }
                 playerTransform.position = spawnPoint.transform.position;
-                Debug.Log("Player teleported to spawn point at: " + spawnPoint.transform.position);
-            }
-
-            if (playerTransform != null && levelEndPoint != null)
-            {
                 startPosX = playerTransform.position.x;
-                levelLength = levelEndPoint.transform.position.x - startPosX;
+                Debug.Log("Player at: " + playerTransform.position);
             }
-        }
 
+            if (levelEndPoint != null)
+                levelLength = levelEndPoint.transform.position.x - startPosX;
+        }
         void Update()
         {
             if (playerTransform != null && !isFinished && levelLength > 0)

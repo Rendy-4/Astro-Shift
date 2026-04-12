@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 22.67, y: -2.53, z: 0}
   m_LocalScale: {x: 0.6351, y: 0.6205, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6669786398881666243}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &161462181644952142
@@ -137,7 +138,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 120}
+  m_Size: {x: 1, y: 120}
   m_EdgeRadius: 0
 --- !u!114 &5196630214505047744
 MonoBehaviour:
@@ -156,3 +157,49 @@ MonoBehaviour:
   progressBar: {fileID: 0}
   levelEndPoint: {fileID: 4117147015150056365}
   endScreen: {fileID: 0}
+  smoothTime: 5
+  playerPrefab: {fileID: 6330041426911625643, guid: efb9c86a127580a40a5e259c7510f139, type: 3}
+--- !u!1 &7214512586927344622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6669786398881666243}
+  - component: {fileID: 6185366193389770855}
+  m_Layer: 0
+  m_Name: EndScreenManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6669786398881666243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214512586927344622}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.83634, y: -0.4624014, z: 0}
+  m_LocalScale: {x: 1.5745552, y: 1.6116035, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5292001593106169797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6185366193389770855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214512586927344622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffef3654f96521048b5e0bae2751ce80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Manager.EndScreenManager
