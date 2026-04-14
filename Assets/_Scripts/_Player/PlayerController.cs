@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using AstroShift.Core;
 
 namespace AstroShift.Player
 {
@@ -13,9 +14,15 @@ namespace AstroShift.Player
 
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 8f; // Kecepatan lari otomatis
+
+        [Header("Particle Pool Settings")]
+        [SerializeField] private ObjectPool particlePool; // Referensi ke Object Pool untuk efek partikel
+        [SerializeField] private Transform FeetPosition; // Posisi di mana partikel akan muncul (misalnya di bawah kaki)
+        [SerializeField] private float particleSpawnInterval = 0.2f; // Interval waktu untuk spawn partikel saat bergerak
         
         private Rigidbody2D rb;
         private bool isFlipping = false; // Menandakan apakah sedang dalam proses membalik gravitasi
+        private float dustTimer = 0f; // Timer untuk mengatur spawn partikel
 
         private void Awake()
         {
@@ -30,6 +37,8 @@ namespace AstroShift.Player
             // PANGGIL FUNGSI GERAK DI SINI
             // FixedUpdate digunakan untuk urusan Fisika agar gerakannya halus (Smooth)
             HandleAutomaticMovement();
+            HandleDustEffects();
+
         }
 
         private void HandleAutomaticMovement()
@@ -37,6 +46,38 @@ namespace AstroShift.Player
             // Kita hanya mengubah kecepatan di sumbu X (Kanan)
             // Sumbu Y tetap menggunakan kecepatan asli dari Rigidbody (efek gravitasi)
             rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
+        }
+
+        private void HandleDustEffects()
+        {
+            // Cek jika bergerak horizontal (moveSpeed) dan menempel di lantai/atap (Y dekat 0)
+            if (Mathf.Abs(rb.linearVelocity.x) > 0.1f && Mathf.Abs(rb.linearVelocity.y) < 0.1f) 
+            {
+                dustTimer += Time.deltaTime;
+                if (dustTimer >= particleSpawnInterval)
+                {
+                    // Panggil fungsi SpawnDust yang sudah menyertakan logika .Play()
+                    SpawnDust(); 
+                    dustTimer = 0f; 
+                }
+            }
+            else
+            {
+                dustTimer = 0f; 
+            }
+        }
+
+        private void SpawnDust()
+        {
+            if (particlePool == null) return;
+
+            GameObject dustObj = particlePool.Get(FeetPosition.position, Quaternion.identity);
+
+            ParticlePool dustParticle = dustObj.GetComponent<ParticlePool>();
+            if (dustParticle != null)
+            {
+                dustParticle.Play(particlePool);
+            }
         }
 
         public void SwitchGravity()
@@ -61,6 +102,8 @@ namespace AstroShift.Player
         charVisual.DOScaleX(targetFlip, flipDuration)
             .SetEase(Ease.InOutSine)
             .SetLink(gameObject);
+
+        SpawnDust(); // Spawn partikel saat membalik gravitasi
     }
 
         public void Die()
