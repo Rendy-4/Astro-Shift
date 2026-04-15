@@ -9,55 +9,57 @@ namespace AstroShift.Player
     public class PlayerController : MonoBehaviour, IDamageable
     {
         [Header("Gravity Settings")]
-        [SerializeField] private float flipDuration = 1f; // Skala gravitasi awal
-        [SerializeField] private Transform charVisual; // Referensi ke visual karakter untuk rotasi
+        [SerializeField] private float flipDuration = 1f;
+        [SerializeField] private Transform charVisual;
 
         [Header("Movement Settings")]
-        [SerializeField] private float moveSpeed = 8f; // Kecepatan lari otomatis
+        [SerializeField] private float moveSpeed = 8f;
+        [SerializeField] private LayerMask groundLayer; // Drag layer "Ground" ke sini di Inspector
 
         [Header("Particle Pool Settings")]
-        [SerializeField] private ObjectPool particlePool; // Referensi ke Object Pool untuk efek partikel
-        [SerializeField] private Transform FeetPosition; // Posisi di mana partikel akan muncul (misalnya di bawah kaki)
-        [SerializeField] private float particleSpawnInterval = 0.2f; // Interval waktu untuk spawn partikel saat bergerak
-        
-        private Rigidbody2D rb;
-        private bool isFlipping = false; // Menandakan apakah sedang dalam proses membalik gravitasi
-        private float dustTimer = 0f; // Timer untuk mengatur spawn partikel
+        [SerializeField] private ObjectPool particlePool;
+        [SerializeField] private Transform FeetPosition;
+        [SerializeField] private float particleSpawnInterval = 0.2f;
+        [SerializeField] private Vector3 runScale = new Vector3(0.5f, 0.5f, 0.5f); // Skala saat lari
+        [SerializeField] private Vector3 switchScale = new Vector3(1.5f, 1.5f, 1.5f); // Skala saat klik
 
-        private void Awake()
-        {
+        private Rigidbody2D rb;
+        private bool isFlipping = false;
+        private float dustTimer = 0f;
+
+        private void Awake() {
             rb = GetComponent<Rigidbody2D>();
         }
+
         private void Start() {
-            isFlipping = rb.gravityScale > 0; // Tentukan status membalik berdasarkan gravitasi awal
+            isFlipping = rb.gravityScale > 0;
         }
 
-        private void FixedUpdate()
-        {
-            // PANGGIL FUNGSI GERAK DI SINI
-            // FixedUpdate digunakan untuk urusan Fisika agar gerakannya halus (Smooth)
+        private void FixedUpdate() {
             HandleAutomaticMovement();
             HandleDustEffects();
-
         }
 
-        private void HandleAutomaticMovement()
-        {
-            // Kita hanya mengubah kecepatan di sumbu X (Kanan)
-            // Sumbu Y tetap menggunakan kecepatan asli dari Rigidbody (efek gravitasi)
+        private void HandleAutomaticMovement() {
             rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
+        }
+
+        // Fungsi cek apakah menempel di lantai atau atap
+        private bool IsTouchingSurface() {
+            // Membuat box kecil di posisi kaki untuk cek tabrakan dengan ground
+            return Physics2D.OverlapBox(FeetPosition.position, new Vector2(0.5f, 0.2f), 0, groundLayer);
         }
 
         private void HandleDustEffects()
         {
-            // Cek jika bergerak horizontal (moveSpeed) dan menempel di lantai/atap (Y dekat 0)
-            if (Mathf.Abs(rb.linearVelocity.x) > 0.1f && Mathf.Abs(rb.linearVelocity.y) < 0.1f) 
+            // Hapus pengecekan velocity.y, cukup cek IsTouchingSurface dan gerak horizontal
+            if (IsTouchingSurface() && Mathf.Abs(rb.linearVelocity.x) > 0.1f) 
             {
                 dustTimer += Time.deltaTime;
                 if (dustTimer >= particleSpawnInterval)
                 {
-                    // Panggil fungsi SpawnDust yang sudah menyertakan logika .Play()
-                    SpawnDust(); 
+                    // Jika isFlipping = false, berarti kita sedang di atas
+                    SpawnDust(runScale, FeetPosition.position, !isFlipping); 
                     dustTimer = 0f; 
                 }
             }
@@ -67,52 +69,62 @@ namespace AstroShift.Player
             }
         }
 
-        private void SpawnDust()
+        private void SpawnDust(Vector3 scale, Vector3 position, bool isAtTop)
         {
             if (particlePool == null) return;
 
-            GameObject dustObj = particlePool.Get(FeetPosition.position, Quaternion.identity);
+            // LOGIKA ROTASI:
+            // Jika di bawah: Rotation (0, 0, 0) -> Identity
+            // Jika di atas: Rotation (180, 0, 0) -> Flip Vertikal saja, X tetap
+            Quaternion dustRotation = isAtTop ? Quaternion.Euler(180, 0, 0) : Quaternion.identity;
+
+            GameObject dustObj = particlePool.Get(position, dustRotation);
 
             ParticlePool dustParticle = dustObj.GetComponent<ParticlePool>();
             if (dustParticle != null)
             {
-                dustParticle.Play(particlePool);
+                dustParticle.Play(particlePool, scale);
             }
         }
 
         public void SwitchGravity()
-    {
-        // Daripada pakai bool manual, langsung balikkan saja nilai gravityScale yang ada
-        rb.gravityScale *= -1;
-    
-        // Update status isFlipping berdasarkan gravityScale terbaru
-        isFlipping = rb.gravityScale > 0; 
-    
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-
-        // Tentukan rotasi dan flip berdasarkan isFlipping yang sudah sinkron
-        float targetRotation = isFlipping ? 0f : 180f;
-        float targetFlip = isFlipping ? 1f : -1f;
-    
-        // Tambahkan .SetLink(gameObject) untuk menghilangkan warning DOTween yang tadi
-        charVisual.DORotate(new Vector3(0, 0, targetRotation), flipDuration)
-            .SetEase(Ease.InOutSine)
-            .SetLink(gameObject); 
-    
-        charVisual.DOScaleX(targetFlip, flipDuration)
-            .SetEase(Ease.InOutSine)
-            .SetLink(gameObject);
-
-        SpawnDust(); // Spawn partikel saat membalik gravitasi
-    }
-
-        public void Die()
         {
-            // Logika kematian, misalnya memulai ulang level atau menampilkan efek kematian
-            Debug.Log("Player mati!, memulai ulang level...");
-            
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Memulai ulang level saat player mati
+            // Simpan posisi SEBELUM kaki dipindahkan (posisi saat ini di lantai/atap)
+            Vector3 spawnPos = FeetPosition.position;
+            bool wasAtTop = !isFlipping; // Jika saat ini di bawah, kita akan ke atas, dan sebaliknya
+            bool wasOnSurface = IsTouchingSurface();
+
+            rb.gravityScale *= -1;
+            isFlipping = rb.gravityScale > 0;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+
+            float targetRotation = isFlipping ? 0f : 180f;
+            float targetFlip = isFlipping ? 1f : -1f;
+
+            // SESUAIKAN NILAI INI: Jika 0.65 kurang tinggi, ganti ke angka yang pas di Scene
+            float targetFeetY = isFlipping ? -0.66f : 0.73f; 
+
+            FeetPosition.localPosition = new Vector3(FeetPosition.localPosition.x, targetFeetY, FeetPosition.localPosition.z);
+
+            charVisual.DORotate(new Vector3(0, 0, targetRotation), flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
+            charVisual.DOScaleX(targetFlip, flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
+
+            if (wasOnSurface)
+            {
+                // Gunakan posisi yang sudah kita simpan tadi agar presisi di permukaan lama
+                SpawnDust(switchScale, spawnPos, wasAtTop); 
+            }
         }
-        
+
+        public void Die() {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        private void OnDrawGizmos() {
+            if (FeetPosition != null) {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireCube(FeetPosition.position, new Vector2(0.5f, 0.2f));
+            }
+        }
     }
 }

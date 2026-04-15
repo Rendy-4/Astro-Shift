@@ -4,18 +4,27 @@ namespace AstroShift.Core
 {
     public class ParticlePool : MonoBehaviour
     {
-        private ParticleSystem _particleSystem;
+        private Animator _animator;
         private ObjectPool _pool;
 
         private void Awake() {
-            _particleSystem = GetComponent<ParticleSystem>();
+            _animator = GetComponent<Animator>();
         }
 
-        public void Play(ObjectPool sourcePool) {
+        // Tambahkan parameter scale di sini
+        public void Play(ObjectPool sourcePool, Vector3 scale) {
             _pool = sourcePool;
-            _particleSystem.Play();
+            
+            // Masalah 1: Reset/Set skala objek agar tidak "selalu besar"
+            transform.localScale = scale;
 
-            Invoke(nameof(ReturnToPool), _particleSystem.main.duration + _particleSystem.main.startLifetime.constantMax); 
+            _animator.Play("DustEffect", -1, 0f);
+
+            float duration = _animator.GetCurrentAnimatorStateInfo(0).length;
+            
+            // Batalkan Invoke sebelumnya jika ada (untuk keamanan)
+            CancelInvoke(nameof(ReturnToPool));
+            Invoke(nameof(ReturnToPool), duration);
         }
 
         private void ReturnToPool() {
@@ -23,4 +32,3 @@ namespace AstroShift.Core
         }
     }
 }
-
