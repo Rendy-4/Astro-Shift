@@ -1,16 +1,23 @@
 using UnityEngine;
+using AstroShift.Manager;
 
-public class PickUpOxygen : MonoBehaviour
+namespace AstroShift.Core
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class PickUpOxygen : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private float oxygenAmount = 30f; // Berapa banyak oksigen yang ditambah
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            private void OnTriggerEnter2D(Collider2D other)
+            {
+                // Pastikan yang menyentuh adalah player
+                if (other.CompareTag("Player"))
+                {
+                    // Isi oksigen player
+                    OxygenManager.Instance.RefillOxygen(oxygenAmount);
+
+                    // Hancurkan item setelah diambil
+                    Destroy(gameObject);
+                }
+            }
     }
 }

@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using AstroShift.Player;
 namespace AstroShift.Manager
 {
     public class OxygenManager : MonoBehaviour
     {
+
+
         [Header("Oxygen Settings")]
         [SerializeField] private float maxOxygen = 100f;
         [SerializeField] private Image oxygenBar;
@@ -51,9 +53,10 @@ namespace AstroShift.Manager
 
         private void OnOxygenEmpty()
         {
-            Debug.Log("Oksigen habis! Player mati.");
-            // Tambahkan logic game over / respawn di sini
-            // Contoh: GameManager.Instance.GameOver();
+            Debug.Log("Oksigen habis!");
+            // Bisa tambahkan efek kematian atau restart level di sini
+            PlayerController player = FindObjectOfType<PlayerController>();
+            player.Die();
         }
 
         // Dipanggil saat player mengambil item oksigen

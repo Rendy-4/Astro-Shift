@@ -73,12 +73,15 @@ namespace AstroShift.Player
         {
             if (particlePool == null) return;
 
-            // LOGIKA ROTASI:
-            // Jika di bawah: Rotation (0, 0, 0) -> Identity
-            // Jika di atas: Rotation (180, 0, 0) -> Flip Vertikal saja, X tetap
+            // JIKA PIVOT SUDAH BOTTOM: Set yOffset ke 0 agar menempel pas di kaki
+            // Kamu bisa beri nilai sangat kecil (misal 0.05f) jika ingin ada sedikit celah visual
+            float yOffset = 0f; 
+            Vector3 spawnPosition = new Vector3(position.x, position.y + yOffset, position.z);
+
+            // Rotasi 180 jika di atap agar pivot (yang sekarang di atas karena rotasi) tetap menempel di atap
             Quaternion dustRotation = isAtTop ? Quaternion.Euler(180, 0, 0) : Quaternion.identity;
 
-            GameObject dustObj = particlePool.Get(position, dustRotation);
+            GameObject dustObj = particlePool.Get(spawnPosition, dustRotation);
 
             ParticlePool dustParticle = dustObj.GetComponent<ParticlePool>();
             if (dustParticle != null)
@@ -89,29 +92,29 @@ namespace AstroShift.Player
 
         public void SwitchGravity()
         {
-            // Simpan posisi SEBELUM kaki dipindahkan (posisi saat ini di lantai/atap)
+            // 1. Simpan status LAMA sebelum ada perubahan apapun
             Vector3 spawnPos = FeetPosition.position;
-            bool wasAtTop = !isFlipping; // Jika saat ini di bawah, kita akan ke atas, dan sebaliknya
+            bool wasAtTop = !isFlipping; // Jika isFlipping true (di bawah), maka wasAtTop = false. BENAR.
             bool wasOnSurface = IsTouchingSurface();
 
+            // 2. Baru setelah itu ubah status gravitasi
             rb.gravityScale *= -1;
             isFlipping = rb.gravityScale > 0;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
 
+            // ... (sisa kode rotasi visual karakter) ...
             float targetRotation = isFlipping ? 0f : 180f;
             float targetFlip = isFlipping ? 1f : -1f;
-
-            // SESUAIKAN NILAI INI: Jika 0.65 kurang tinggi, ganti ke angka yang pas di Scene
-            float targetFeetY = isFlipping ? -0.66f : 0.73f; 
+            float targetFeetY = isFlipping ? -0.69f : 0.83f; 
 
             FeetPosition.localPosition = new Vector3(FeetPosition.localPosition.x, targetFeetY, FeetPosition.localPosition.z);
 
             charVisual.DORotate(new Vector3(0, 0, targetRotation), flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
             charVisual.DOScaleX(targetFlip, flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
 
+            // 3. Gunakan status LAMA yang sudah disimpan tadi
             if (wasOnSurface)
             {
-                // Gunakan posisi yang sudah kita simpan tadi agar presisi di permukaan lama
                 SpawnDust(switchScale, spawnPos, wasAtTop); 
             }
         }

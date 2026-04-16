@@ -2487,11 +2487,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2509,11 +2509,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2531,11 +2531,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2553,11 +2553,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2575,11 +2575,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2597,11 +2597,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2619,11 +2619,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2641,11 +2641,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2663,11 +2663,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2685,11 +2685,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2707,11 +2707,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2729,11 +2729,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2751,11 +2751,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2773,11 +2773,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2795,11 +2795,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 1216
+        y: 1220
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2817,11 +2817,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2839,11 +2839,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2861,11 +2861,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2883,11 +2883,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2905,11 +2905,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2927,11 +2927,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2949,11 +2949,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2971,11 +2971,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2993,11 +2993,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3015,11 +3015,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3037,11 +3037,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3059,11 +3059,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3081,11 +3081,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3103,11 +3103,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3125,11 +3125,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 1152
+        y: 1160
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3147,11 +3147,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3169,11 +3169,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3191,11 +3191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3213,11 +3213,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3235,11 +3235,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3257,11 +3257,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3279,11 +3279,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3301,11 +3301,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3323,11 +3323,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3345,11 +3345,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3367,11 +3367,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3389,11 +3389,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3411,11 +3411,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3433,11 +3433,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3455,11 +3455,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 1088
+        y: 1100
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3477,11 +3477,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3499,11 +3499,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3521,11 +3521,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3543,11 +3543,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3565,11 +3565,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3587,11 +3587,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3609,11 +3609,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3631,11 +3631,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3653,11 +3653,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3675,11 +3675,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3697,11 +3697,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3719,11 +3719,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3741,11 +3741,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3763,11 +3763,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3785,11 +3785,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 1024
+        y: 1040
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3807,11 +3807,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3829,11 +3829,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3851,11 +3851,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3873,11 +3873,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3895,11 +3895,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3917,11 +3917,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3939,11 +3939,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3961,11 +3961,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3983,11 +3983,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4005,11 +4005,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4027,11 +4027,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4049,11 +4049,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4071,11 +4071,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4093,11 +4093,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4115,11 +4115,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 960
+        y: 980
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4137,11 +4137,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4159,11 +4159,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4181,11 +4181,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4203,11 +4203,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4225,11 +4225,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4247,11 +4247,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4269,11 +4269,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4291,11 +4291,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4313,11 +4313,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4335,11 +4335,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4357,11 +4357,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4379,11 +4379,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4401,11 +4401,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4423,11 +4423,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4445,11 +4445,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 896
+        y: 920
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4467,11 +4467,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4489,11 +4489,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4511,11 +4511,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4533,11 +4533,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4555,11 +4555,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4577,11 +4577,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4599,11 +4599,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4621,11 +4621,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4643,11 +4643,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4665,11 +4665,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4687,11 +4687,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4709,11 +4709,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4731,11 +4731,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4753,11 +4753,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4775,11 +4775,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 832
+        y: 860
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4797,11 +4797,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4819,11 +4819,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4841,11 +4841,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4863,11 +4863,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4885,11 +4885,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4907,11 +4907,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4929,11 +4929,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4951,11 +4951,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4973,11 +4973,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4995,11 +4995,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5017,11 +5017,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5039,11 +5039,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5061,11 +5061,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5083,11 +5083,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5105,11 +5105,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 768
+        y: 800
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5127,11 +5127,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5149,11 +5149,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5171,11 +5171,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5193,11 +5193,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5215,11 +5215,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5237,11 +5237,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5259,11 +5259,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5281,11 +5281,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5303,11 +5303,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5325,11 +5325,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5347,11 +5347,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5369,11 +5369,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5391,11 +5391,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5413,11 +5413,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 832
-        y: 704
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5434,12 +5434,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_134
       rect:
         serializedVersion: 2
-        x: 0
-        y: 640
+        x: 896
+        y: 740
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5456,12 +5456,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_135
       rect:
         serializedVersion: 2
-        x: 64
-        y: 640
+        x: 0
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5478,12 +5478,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_136
       rect:
         serializedVersion: 2
-        x: 128
-        y: 640
+        x: 64
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5500,12 +5500,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_137
       rect:
         serializedVersion: 2
-        x: 192
-        y: 640
+        x: 128
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5522,12 +5522,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_138
       rect:
         serializedVersion: 2
-        x: 256
-        y: 640
+        x: 192
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5544,12 +5544,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_139
       rect:
         serializedVersion: 2
-        x: 320
-        y: 640
+        x: 256
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5566,12 +5566,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_140
       rect:
         serializedVersion: 2
-        x: 384
-        y: 640
+        x: 320
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5588,12 +5588,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_141
       rect:
         serializedVersion: 2
-        x: 448
-        y: 640
+        x: 384
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5610,12 +5610,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_142
       rect:
         serializedVersion: 2
-        x: 512
-        y: 640
+        x: 448
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5632,12 +5632,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_143
       rect:
         serializedVersion: 2
-        x: 576
-        y: 640
+        x: 512
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5654,12 +5654,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_144
       rect:
         serializedVersion: 2
-        x: 640
-        y: 640
+        x: 576
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5676,12 +5676,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_145
       rect:
         serializedVersion: 2
-        x: 704
-        y: 640
+        x: 640
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5698,12 +5698,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_146
       rect:
         serializedVersion: 2
-        x: 768
-        y: 640
+        x: 704
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5720,12 +5720,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_147
       rect:
         serializedVersion: 2
-        x: 832
-        y: 640
+        x: 768
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5742,12 +5742,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_148
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
+        x: 832
+        y: 680
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5764,12 +5764,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_149
       rect:
         serializedVersion: 2
-        x: 64
-        y: 576
+        x: 0
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5786,12 +5786,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_150
       rect:
         serializedVersion: 2
-        x: 128
-        y: 576
+        x: 64
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5808,12 +5808,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_151
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
+        x: 128
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5830,12 +5830,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_152
       rect:
         serializedVersion: 2
-        x: 256
-        y: 576
+        x: 192
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5852,12 +5852,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_153
       rect:
         serializedVersion: 2
-        x: 320
-        y: 576
+        x: 256
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5874,12 +5874,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_154
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
+        x: 320
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5896,12 +5896,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_155
       rect:
         serializedVersion: 2
-        x: 448
-        y: 576
+        x: 384
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5918,12 +5918,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_156
       rect:
         serializedVersion: 2
-        x: 512
-        y: 576
+        x: 448
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5940,12 +5940,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_157
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
+        x: 512
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5962,12 +5962,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_158
       rect:
         serializedVersion: 2
-        x: 640
-        y: 576
+        x: 576
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5984,12 +5984,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_159
       rect:
         serializedVersion: 2
-        x: 704
-        y: 576
+        x: 640
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6006,12 +6006,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_160
       rect:
         serializedVersion: 2
-        x: 768
-        y: 576
+        x: 704
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6028,12 +6028,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_161
       rect:
         serializedVersion: 2
-        x: 832
-        y: 576
+        x: 768
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6050,12 +6050,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_162
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
+        x: 832
+        y: 620
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6072,12 +6072,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_163
       rect:
         serializedVersion: 2
-        x: 64
-        y: 512
+        x: 0
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6094,12 +6094,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_164
       rect:
         serializedVersion: 2
-        x: 128
-        y: 512
+        x: 64
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6116,12 +6116,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_165
       rect:
         serializedVersion: 2
-        x: 192
-        y: 512
+        x: 128
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6138,12 +6138,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_166
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
+        x: 192
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6160,12 +6160,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_167
       rect:
         serializedVersion: 2
-        x: 320
-        y: 512
+        x: 256
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6182,12 +6182,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_168
       rect:
         serializedVersion: 2
-        x: 384
-        y: 512
+        x: 320
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6204,12 +6204,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_169
       rect:
         serializedVersion: 2
-        x: 448
-        y: 512
+        x: 384
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6226,12 +6226,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_170
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
+        x: 448
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6248,12 +6248,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_171
       rect:
         serializedVersion: 2
-        x: 576
-        y: 512
+        x: 512
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6270,12 +6270,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_172
       rect:
         serializedVersion: 2
-        x: 640
-        y: 512
+        x: 576
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6292,12 +6292,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_173
       rect:
         serializedVersion: 2
-        x: 704
-        y: 512
+        x: 640
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6314,12 +6314,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_174
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
+        x: 704
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6336,12 +6336,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_175
       rect:
         serializedVersion: 2
-        x: 832
-        y: 512
+        x: 768
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6358,12 +6358,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_176
       rect:
         serializedVersion: 2
-        x: 0
-        y: 448
+        x: 832
+        y: 590
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6380,12 +6380,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_177
       rect:
         serializedVersion: 2
-        x: 64
-        y: 448
+        x: 0
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6402,12 +6402,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_178
       rect:
         serializedVersion: 2
-        x: 128
-        y: 448
+        x: 64
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6424,12 +6424,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_179
       rect:
         serializedVersion: 2
-        x: 192
-        y: 448
+        x: 128
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6446,12 +6446,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_180
       rect:
         serializedVersion: 2
-        x: 256
-        y: 448
+        x: 192
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6468,12 +6468,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_181
       rect:
         serializedVersion: 2
-        x: 320
-        y: 448
+        x: 256
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6490,12 +6490,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_182
       rect:
         serializedVersion: 2
-        x: 384
-        y: 448
+        x: 320
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6512,12 +6512,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_183
       rect:
         serializedVersion: 2
-        x: 448
-        y: 448
+        x: 384
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6534,12 +6534,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_184
       rect:
         serializedVersion: 2
-        x: 512
-        y: 448
+        x: 448
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6556,12 +6556,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_185
       rect:
         serializedVersion: 2
-        x: 576
-        y: 448
+        x: 512
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6578,12 +6578,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_186
       rect:
         serializedVersion: 2
-        x: 640
-        y: 448
+        x: 576
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6600,12 +6600,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_187
       rect:
         serializedVersion: 2
-        x: 704
-        y: 448
+        x: 640
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6622,12 +6622,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_188
       rect:
         serializedVersion: 2
-        x: 768
-        y: 448
+        x: 704
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6644,12 +6644,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_189
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 768
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6666,12 +6666,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_190
       rect:
         serializedVersion: 2
-        x: 64
-        y: 384
+        x: 832
+        y: 500
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6688,12 +6688,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_191
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
+        x: 0
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6710,12 +6710,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_192
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
+        x: 64
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6732,12 +6732,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_193
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
+        x: 128
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6754,12 +6754,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_194
       rect:
         serializedVersion: 2
-        x: 320
-        y: 384
+        x: 192
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6776,12 +6776,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_195
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
+        x: 256
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6798,12 +6798,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_196
       rect:
         serializedVersion: 2
-        x: 448
-        y: 384
+        x: 320
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6820,12 +6820,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_197
       rect:
         serializedVersion: 2
-        x: 512
-        y: 384
+        x: 384
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6842,12 +6842,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_198
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
+        x: 448
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6864,12 +6864,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_199
       rect:
         serializedVersion: 2
-        x: 640
-        y: 384
+        x: 512
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6886,12 +6886,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_200
       rect:
         serializedVersion: 2
-        x: 704
-        y: 384
+        x: 576
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6908,12 +6908,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_201
       rect:
         serializedVersion: 2
-        x: 768
-        y: 384
+        x: 640
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6930,12 +6930,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_202
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 704
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6952,12 +6952,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_203
       rect:
         serializedVersion: 2
-        x: 64
-        y: 320
+        x: 768
+        y: 440
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6974,12 +6974,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_204
       rect:
         serializedVersion: 2
-        x: 128
-        y: 320
+        x: 0
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6996,12 +6996,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_205
       rect:
         serializedVersion: 2
-        x: 192
-        y: 320
+        x: 64
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7018,12 +7018,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_206
       rect:
         serializedVersion: 2
-        x: 256
-        y: 320
+        x: 128
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7040,12 +7040,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_207
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
+        x: 192
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7062,12 +7062,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_208
       rect:
         serializedVersion: 2
-        x: 384
-        y: 320
+        x: 256
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7084,12 +7084,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_209
       rect:
         serializedVersion: 2
-        x: 448
-        y: 320
+        x: 320
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7106,12 +7106,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_210
       rect:
         serializedVersion: 2
-        x: 512
-        y: 320
+        x: 384
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7128,12 +7128,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_211
       rect:
         serializedVersion: 2
-        x: 576
-        y: 320
+        x: 448
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7150,12 +7150,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_212
       rect:
         serializedVersion: 2
-        x: 640
-        y: 320
+        x: 512
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7172,12 +7172,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_213
       rect:
         serializedVersion: 2
-        x: 704
-        y: 320
+        x: 576
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7194,12 +7194,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_214
       rect:
         serializedVersion: 2
-        x: 768
-        y: 320
+        x: 640
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7216,12 +7216,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_215
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 704
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7238,12 +7238,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_216
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 768
+        y: 380
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7260,12 +7260,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_217
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
+        x: 0
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7282,12 +7282,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_218
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
+        x: 64
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7304,12 +7304,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_219
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
+        x: 128
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7326,12 +7326,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_220
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
+        x: 192
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7348,12 +7348,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_221
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
+        x: 256
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7370,12 +7370,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_222
       rect:
         serializedVersion: 2
-        x: 448
-        y: 256
+        x: 320
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7392,12 +7392,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_223
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
+        x: 384
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7414,12 +7414,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_224
       rect:
         serializedVersion: 2
-        x: 576
-        y: 256
+        x: 448
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7436,12 +7436,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_225
       rect:
         serializedVersion: 2
-        x: 640
-        y: 256
+        x: 512
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7458,12 +7458,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_226
       rect:
         serializedVersion: 2
-        x: 704
-        y: 256
+        x: 576
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7480,12 +7480,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_227
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
+        x: 640
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7502,12 +7502,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_228
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 704
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7524,12 +7524,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_229
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 768
+        y: 320
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7546,12 +7546,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_230
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 0
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7568,12 +7568,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_231
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 64
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7590,12 +7590,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_232
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
+        x: 128
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7612,12 +7612,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_233
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
+        x: 192
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7634,12 +7634,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_234
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
+        x: 256
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7656,12 +7656,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_235
       rect:
         serializedVersion: 2
-        x: 448
-        y: 192
+        x: 320
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7678,12 +7678,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_236
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
+        x: 384
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7700,12 +7700,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_237
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
+        x: 448
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7722,12 +7722,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_238
       rect:
         serializedVersion: 2
-        x: 640
-        y: 192
+        x: 512
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7744,12 +7744,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_239
       rect:
         serializedVersion: 2
-        x: 704
-        y: 192
+        x: 576
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7766,12 +7766,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_240
       rect:
         serializedVersion: 2
-        x: 768
-        y: 192
+        x: 640
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7788,12 +7788,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_241
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 704
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7810,12 +7810,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_242
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 768
+        y: 260
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7832,12 +7832,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_243
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 0
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7854,12 +7854,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_244
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 64
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7876,12 +7876,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_245
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 128
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7898,12 +7898,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_246
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 192
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7920,12 +7920,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_247
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
+        x: 256
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7942,12 +7942,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_248
       rect:
         serializedVersion: 2
-        x: 448
-        y: 128
+        x: 320
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7964,12 +7964,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_249
       rect:
         serializedVersion: 2
-        x: 512
-        y: 128
+        x: 384
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7986,12 +7986,12 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_250
       rect:
         serializedVersion: 2
-        x: 576
-        y: 128
+        x: 448
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -8008,19 +8008,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_251
       rect:
         serializedVersion: 2
-        x: 640
-        y: 128
+        x: 512
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc55c45bed8b9a3a0800000000000000
+      spriteID: 806ba248669531246bec86b1ba21b586
       internalID: -6653583707799267892
       vertices: []
       indices: 
@@ -8030,19 +8030,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_252
       rect:
         serializedVersion: 2
-        x: 704
-        y: 128
+        x: 576
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ef539c0f95dcf240800000000000000
+      spriteID: 1ad92c345735a28409a1a25f6c4b6e31
       internalID: 4826967779721830374
       vertices: []
       indices: 
@@ -8052,19 +8052,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_253
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 640
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2d9524112c777f60800000000000000
+      spriteID: dff50e8ec17bf9e479148c55644b98a8
       internalID: 8032024941952343340
       vertices: []
       indices: 
@@ -8074,19 +8074,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_254
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 704
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86d2c184fbca675a0800000000000000
+      spriteID: ae11a65add7f2c942a5dac33b7188b2e
       internalID: -6523837072651047576
       vertices: []
       indices: 
@@ -8096,19 +8096,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_255
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 768
+        y: 200
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3dc76f9b2f30ddf40800000000000000
+      spriteID: a25783dcb392c3348986031a52a81824
       internalID: 5754760239886269651
       vertices: []
       indices: 
@@ -8118,19 +8118,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_256
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 0
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 70195ee36cfcbbd80800000000000000
+      spriteID: 1d3dbbf2469bee547ad4c3ea3d1141f8
       internalID: -8233759043351113465
       vertices: []
       indices: 
@@ -8140,19 +8140,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_257
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 64
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee6f0f82b3b2b56e0800000000000000
+      spriteID: e7a8e415f2fd58e4a99ea4b258fdebc1
       internalID: -1847835689015511314
       vertices: []
       indices: 
@@ -8162,19 +8162,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_258
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
+        x: 128
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 084b07a9751812c60800000000000000
+      spriteID: cca3aa36441b36444804355f3007a6db
       internalID: 7791651043580884096
       vertices: []
       indices: 
@@ -8184,19 +8184,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_259
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
+        x: 192
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e24d4c791747c6490800000000000000
+      spriteID: 4177a1b0cf348704cb603e0e9c7d6b92
       internalID: -7751692827385080786
       vertices: []
       indices: 
@@ -8206,19 +8206,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_260
       rect:
         serializedVersion: 2
-        x: 448
-        y: 64
+        x: 256
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ba77f61a48362f10800000000000000
+      spriteID: 4ead2ca0289063044967300553cb4bd1
       internalID: 2244543355154823862
       vertices: []
       indices: 
@@ -8228,19 +8228,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_261
       rect:
         serializedVersion: 2
-        x: 512
-        y: 64
+        x: 320
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cddafe64d1dadc80800000000000000
+      spriteID: a318ea75a6b5ea54bbcbafe9bf655520
       internalID: -8297088653151511096
       vertices: []
       indices: 
@@ -8250,19 +8250,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_262
       rect:
         serializedVersion: 2
-        x: 576
-        y: 64
+        x: 384
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d64a00f9926008d0800000000000000
+      spriteID: f18b721109e6f5340811066eceac0e6d
       internalID: -2882195348220393776
       vertices: []
       indices: 
@@ -8272,19 +8272,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_263
       rect:
         serializedVersion: 2
-        x: 640
-        y: 64
+        x: 448
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce5a6348b8ffebd70800000000000000
+      spriteID: bbf472dcf2e1ea143a2ed67138a738f4
       internalID: 9060960474999727596
       vertices: []
       indices: 
@@ -8294,19 +8294,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_264
       rect:
         serializedVersion: 2
-        x: 704
-        y: 64
+        x: 512
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 425acde8c1d4aa110800000000000000
+      spriteID: 053dfd89a639c074cbceea4247c03e9d
       internalID: 1272914629736834340
       vertices: []
       indices: 
@@ -8316,19 +8316,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_265
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 576
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ff4d382cc28d07240800000000000000
+      spriteID: a250920283afc5140a7560e97baa7a7e
       internalID: 4787564090648417535
       vertices: []
       indices: 
@@ -8338,19 +8338,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_266
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 640
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f2f01e8b67e851320800000000000000
+      spriteID: 006a5b25ff2130e4f93fa427964ca9e3
       internalID: 2528083406397443887
       vertices: []
       indices: 
@@ -8360,19 +8360,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_267
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 704
+        y: 140
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e34bd2122f5622950800000000000000
+      spriteID: 4970bfdb02b639e428bc54116ed76cd8
       internalID: 6422808109196883006
       vertices: []
       indices: 
@@ -8382,19 +8382,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_268
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 0
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5b18d3a004c0c020800000000000000
+      spriteID: 7c805530ff33d11439a74b8e8d0c2fd5
       internalID: 2360101711770032990
       vertices: []
       indices: 
@@ -8404,19 +8404,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_269
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 64
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5e57b9eca39623ba0800000000000000
+      spriteID: b8678fc79e2564744b7f1957a4f2588b
       internalID: -6110706043093027355
       vertices: []
       indices: 
@@ -8426,19 +8426,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_270
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 128
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 741e6cb614f103310800000000000000
+      spriteID: 52893505774e0424d96be6c624d3709f
       internalID: 1382639451444273479
       vertices: []
       indices: 
@@ -8448,19 +8448,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_271
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 192
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8bad23b8d8a4bebe0800000000000000
+      spriteID: b3151c00e92fe744aac002fcaeac62be
       internalID: -1446980883483272520
       vertices: []
       indices: 
@@ -8470,19 +8470,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_272
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
+        x: 256
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e076d394742d48a30800000000000000
+      spriteID: f78b77eefcf2636489142466a7729481
       internalID: 4216726354738898702
       vertices: []
       indices: 
@@ -8492,19 +8492,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_273
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
+        x: 320
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ff4bcba280944980800000000000000
+      spriteID: a8329e10b914eb841a4da9ed7372aa8f
       internalID: -8555554501194723338
       vertices: []
       indices: 
@@ -8514,19 +8514,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_274
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
+        x: 384
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6811abfd687963050800000000000000
+      spriteID: b09b498296b1edb4882771db6e2dcdd9
       internalID: 5779973777311535494
       vertices: []
       indices: 
@@ -8536,19 +8536,19 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_275
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
+        x: 448
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 019b1f80746ad05a0800000000000000
+      spriteID: 653ea6c6fb53d924d9ed0313dbf126a7
       internalID: -6553399058731255536
       vertices: []
       indices: 
@@ -8558,20 +8558,350 @@ TextureImporter:
       name: Free Smoke Fx  Pixel 07_276
       rect:
         serializedVersion: 2
-        x: 704
-        y: 0
+        x: 512
+        y: 80
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6df07fa4c36b97880800000000000000
+      spriteID: c4647ef57a1ab424f8e1467ae2530064
       internalID: -8612652442297364522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_277
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 80
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6844902a06c9447a0dbee9fcb831e3
+      internalID: -1866289979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_278
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 80
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c88fc2f3222c478e5a37a3a497e2b
+      internalID: -540254485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_279
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 80
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee14f040cdb76f47bc1d1ffb09af2d0
+      internalID: 100253337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_280
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa36342b5014b904d83e2158765bb884
+      internalID: -1677825120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_281
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fa18eb56a510147b565c33cb2c8f8b
+      internalID: -1630943735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_282
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4357f870291984aa01c7f7081b27fb
+      internalID: -330411776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_283
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dca097b34d83c4381be3d345f75009
+      internalID: 559256313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_284
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12161ebb0033d8e438427015b2f1b4a8
+      internalID: 450213353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_285
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c10f65fb53aff4ab96b6ba5a722433
+      internalID: -1718588609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_286
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beed276ec0e12ab4ab36f1db7a4dc669
+      internalID: 440649790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_287
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2af47fcc4cb824a8977848ad8467fe
+      internalID: 1743117750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_288
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21572f655ea33194d80ed6e907cd12f5
+      internalID: 536423430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_289
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200062a9d192b8c4da4f8c9fbe28a59a
+      internalID: 170601493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_290
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc173f12f4c79ee45b136950538fb0f6
+      internalID: -1219158524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Smoke Fx  Pixel 07_291
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 20
+        width: 64
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ec385c6eb45b8448e6f6af258ece63
+      internalID: 1324000360
       vertices: []
       indices: 
       edges: []
@@ -8590,7 +8920,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":60.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Free Smoke Fx  Pixel 07_0: -2653914992999499233
       Free Smoke Fx  Pixel 07_1: -6254546564646085469
@@ -8790,8 +9120,23 @@ TextureImporter:
       Free Smoke Fx  Pixel 07_274: 5779973777311535494
       Free Smoke Fx  Pixel 07_275: -6553399058731255536
       Free Smoke Fx  Pixel 07_276: -8612652442297364522
+      Free Smoke Fx  Pixel 07_277: -1866289979
+      Free Smoke Fx  Pixel 07_278: -540254485
+      Free Smoke Fx  Pixel 07_279: 100253337
       Free Smoke Fx  Pixel 07_28: 5437791529113330128
+      Free Smoke Fx  Pixel 07_280: -1677825120
+      Free Smoke Fx  Pixel 07_281: -1630943735
+      Free Smoke Fx  Pixel 07_282: -330411776
+      Free Smoke Fx  Pixel 07_283: 559256313
+      Free Smoke Fx  Pixel 07_284: 450213353
+      Free Smoke Fx  Pixel 07_285: -1718588609
+      Free Smoke Fx  Pixel 07_286: 440649790
+      Free Smoke Fx  Pixel 07_287: 1743117750
+      Free Smoke Fx  Pixel 07_288: 536423430
+      Free Smoke Fx  Pixel 07_289: 170601493
       Free Smoke Fx  Pixel 07_29: 5342682104490539444
+      Free Smoke Fx  Pixel 07_290: -1219158524
+      Free Smoke Fx  Pixel 07_291: 1324000360
       Free Smoke Fx  Pixel 07_3: 7943359109857364348
       Free Smoke Fx  Pixel 07_30: 3800706313891045686
       Free Smoke Fx  Pixel 07_31: 6513072556810672811
