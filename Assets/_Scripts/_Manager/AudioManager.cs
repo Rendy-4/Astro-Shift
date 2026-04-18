@@ -1,0 +1,61 @@
+using UnityEngine;
+
+namespace AstroShift.Manager
+{
+    public class AudioManager : MonoBehaviour
+    {
+        public static AudioManager Instance { get; private set; }
+
+        [Header("Audio Sources")]
+        [SerializeField] private AudioSource musicSource;
+        [SerializeField] private AudioSource sfxSource;
+
+        [Header("Button SFX Clips")]
+        [SerializeField] private AudioClip clickInSfx;
+        [SerializeField] private AudioClip clickOutSfx;
+
+        private void Awake() {
+            if (Instance == null) 
+            {
+                Instance = this;
+                
+                // Auto-assign dari children
+                AudioSource[] sources = GetComponentsInChildren<AudioSource>();
+                foreach (var src in sources) {
+                    if (src.gameObject.name == "Music") musicSource = src;
+                    if (src.gameObject.name == "SFX") sfxSource = src;
+                }
+                
+                Debug.Log($"musicSource: {musicSource} | sfxSource: {sfxSource}");
+            } 
+            else 
+            {
+                Destroy(gameObject);
+            }
+        }
+        
+        public void PlayMusic(AudioClip clip, bool loop = true)
+        {
+            if (musicSource.clip == clip) return; // Cek jika musik yang sama sudah diputar
+            musicSource.clip = clip;
+            musicSource.loop = loop;
+            musicSource.Play();
+        }
+
+        public void playSfx(AudioClip clip)
+        {
+            if (clip != null)
+            {
+                Debug.Log($"Playing clip: {clip.name} | source volume: {sfxSource.volume} | source mute: {sfxSource.mute} | source enabled: {sfxSource.enabled}");
+                sfxSource.PlayOneShot(clip);
+            }
+        }
+
+        public void PlayClickInSfx() 
+        {
+            Debug.Log($"Instance: {Instance} | ClickInSfx: {clickInSfx} | SfxSource: {sfxSource}");
+            playSfx(clickInSfx);
+        }
+        public void PlayClickOutSfx() => playSfx(clickOutSfx);
+    }
+}

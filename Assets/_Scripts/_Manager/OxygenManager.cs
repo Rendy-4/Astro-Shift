@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using AstroShift.Player;
+
 namespace AstroShift.Manager
 {
     public class OxygenManager : MonoBehaviour
@@ -19,18 +21,51 @@ namespace AstroShift.Manager
 
         void Awake()
         {
-            if (Instance == null) Instance = this;
-            else Destroy(gameObject);
+            if (Instance == null)
+            {
+                Instance = this;
+                currentOxygen = maxOxygen;
+            }
+            else 
+            {
+                Destroy(gameObject);
+                return;
+            }
+        }
+
+        private void OnEnable() {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable() {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+            FindOxygenUI();
+            isDead = false;
+
+            currentOxygen = maxOxygen; // Reset oksigen saat pindah scene
+        }
+
+        private void FindOxygenUI() {
+            GameObject oxygenBarObj = GameObject.Find("Mask Oxygen");
+            if (oxygenBarObj != null) {
+                oxygenBar = oxygenBarObj.GetComponent<Image>();
+                UpdateOxygenBar();
+            } else {
+                Debug.LogWarning("Oxygen bar UI tidak ditemukan di scene!");
+            }
         }
 
         void Start()
         {
-            currentOxygen = maxOxygen;
             UpdateOxygenBar();
         }
 
         void Update()
         {
+            if (SceneManager.GetActiveScene().name == "MainMenu") return; // Jangan kurangi oksigen di menu utama
             if (isDead) return;
 
             // Terus berkurang setiap detik
@@ -56,7 +91,7 @@ namespace AstroShift.Manager
             Debug.Log("Oksigen habis!");
             // Bisa tambahkan efek kematian atau restart level di sini
             PlayerController player = FindObjectOfType<PlayerController>();
-            player.Die();
+            if (player != null) player.Die();
         }
 
         // Dipanggil saat player mengambil item oksigen
