@@ -20,10 +20,14 @@ namespace AstroShift.Manager
                 Instance = this;
                 
                 // Auto-assign dari children
-                AudioSource[] sources = GetComponentsInChildren<AudioSource>();
+                AudioSource[] sources = GetComponentsInChildren<AudioSource>(true);
                 foreach (var src in sources) {
-                    if (src.gameObject.name == "Music") musicSource = src;
-                    if (src.gameObject.name == "SFX") sfxSource = src;
+                    src.gameObject.SetActive(true); // Pastikan aktif untuk deteksi
+                    src.enabled = true; // Pastikan komponen aktif
+
+                    string objName = src.gameObject.name.ToLower();
+                    if (objName == "music") musicSource = src;
+                    if (objName == "sfx") sfxSource = src;
                 }
                 
                 Debug.Log($"musicSource: {musicSource} | sfxSource: {sfxSource}");
@@ -47,6 +51,7 @@ namespace AstroShift.Manager
             if (clip != null)
             {
                 Debug.Log($"Playing clip: {clip.name} | source volume: {sfxSource.volume} | source mute: {sfxSource.mute} | source enabled: {sfxSource.enabled}");
+                Debug.Log($"sfxSource gameObject active: {sfxSource.gameObject.activeInHierarchy} | component enabled: {sfxSource.enabled}");
                 sfxSource.PlayOneShot(clip);
             }
         }

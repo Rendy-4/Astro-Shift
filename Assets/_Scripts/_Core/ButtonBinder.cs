@@ -8,7 +8,7 @@ public class ButtonBinder : MonoBehaviour
     {
         Restart,
         LevelSelect,
-        NextLevel
+        NextLevel,
     }
     [SerializeField] private ButtonType buttonType; // Pilih jenis tombol di Inspector
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +24,11 @@ public class ButtonBinder : MonoBehaviour
         }
         else if (buttonType == ButtonType.LevelSelect)
         {
+            button.onClick.AddListener(() =>{
+                if (AudioManager.Instance != null) {
+                    AudioManager.Instance.PlayClickOutSfx();
+                }
+            });
             button.onClick.AddListener(() => EndScreenManager.Instance.LevelSelect());
         }
         else if (buttonType == ButtonType.NextLevel)
