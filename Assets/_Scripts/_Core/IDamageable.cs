@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public interface IDamageable
+namespace AstroShift.Core
 {
-    void Die();
+    public interface IDamageable
+    {
+        void Die(GameObject killer = null);
+    }
 }

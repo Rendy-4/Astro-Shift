@@ -1,13 +1,18 @@
 using UnityEngine;
+using AstroShift.Core;
 
-public class HazardScript : MonoBehaviour
+namespace AstroShift.Core
 {
-    private void OnCollisionEnter2D(Collision2D other) {
-            IDamageable damageable = other.gameObject.GetComponent<IDamageable>();
-            if (damageable != null)
-            {
-                damageable.Die(); // Memanggil metode Die() pada player
-            }
-            
+    public class HazardScript : MonoBehaviour
+    {
+        private void OnCollisionEnter2D(Collision2D other) {
+                IDamageable damageable = other.gameObject.GetComponent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.Die(this.gameObject); // Memanggil metode Die() pada player
+                }
+                
+        }
     }
 }
+
