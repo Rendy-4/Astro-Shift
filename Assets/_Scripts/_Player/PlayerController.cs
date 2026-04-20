@@ -3,6 +3,7 @@ using DG.Tweening;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using AstroShift.Core;
+using AstroShift.Manager;
 
 namespace AstroShift.Player
 {
@@ -77,6 +78,8 @@ namespace AstroShift.Player
 
         public void SwitchGravity()
         {
+            AstroShift.Manager.LevelStastManager.clickCount++;
+
             Vector3 spawnPos = FeetPosition.position;
             bool wasAtTop = !isFlipping;
             bool wasOnSurface = IsTouchingSurface();
@@ -102,6 +105,7 @@ namespace AstroShift.Player
 
         public void Die(GameObject killer = null)
         {
+
             if (playerShield != null && playerShield.IsActive)
             {
                 playerShield.BreakShield();
@@ -112,6 +116,7 @@ namespace AstroShift.Player
                 }
                 return; 
             }
+            AstroShift.Manager.LevelStastManager.attemptCount++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
