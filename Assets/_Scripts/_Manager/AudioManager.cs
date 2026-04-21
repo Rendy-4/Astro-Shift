@@ -29,8 +29,6 @@ namespace AstroShift.Manager
                     if (objName == "music") musicSource = src;
                     if (objName == "sfx") sfxSource = src;
                 }
-                
-                Debug.Log($"musicSource: {musicSource} | sfxSource: {sfxSource}");
             } 
             else 
             {
@@ -50,15 +48,13 @@ namespace AstroShift.Manager
         {
             if (clip != null)
             {
-                Debug.Log($"Playing clip: {clip.name} | source volume: {sfxSource.volume} | source mute: {sfxSource.mute} | source enabled: {sfxSource.enabled}");
-                Debug.Log($"sfxSource gameObject active: {sfxSource.gameObject.activeInHierarchy} | component enabled: {sfxSource.enabled}");
+                
                 sfxSource.PlayOneShot(clip);
             }
         }
 
         public void PlayClickInSfx() 
         {
-            Debug.Log($"Instance: {Instance} | ClickInSfx: {clickInSfx} | SfxSource: {sfxSource}");
             playSfx(clickInSfx);
         }
         public void PlayClickOutSfx() => playSfx(clickOutSfx);

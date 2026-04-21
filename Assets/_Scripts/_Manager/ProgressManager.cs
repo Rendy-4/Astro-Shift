@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using AstroShift.Player;
+using AstroShift.Manager;
 
 namespace AstroShift.Manager
 {
@@ -120,7 +121,10 @@ namespace AstroShift.Manager
 
             if (progressText != null) progressText.text = "100%";
             if (progressBar != null) progressBar.fillAmount = 1f;
-            if (endScreen != null) endScreen.SetActive(true);
+            if (EndScreenManager.Instance != null) 
+            {
+                EndScreenManager.Instance.ShowEndScreen();
+            }
             Time.timeScale = 0f; 
         }
     }

@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 6962118336550039529}
   - component: {fileID: 8463663263651087475}
   - component: {fileID: 5454454265162236153}
+  - component: {fileID: 5765031615166017344}
   m_Layer: 0
   m_Name: Player Container
   m_TagString: Player
@@ -210,11 +211,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  particlePool: {fileID: 0}
   FeetPosition: {fileID: 7632684400072498038}
-  particleSpawnInterval: 0.5
-  runScale: {x: 0.5, y: 0.5, z: 0.5}
-  switchScale: {x: 1.5, y: 1.5, z: 1.5}
 --- !u!114 &5454454265162236153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +225,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Manager.InputManager
   Player: {fileID: 8463663263651087475}
+--- !u!114 &5765031615166017344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330041426911625643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944535b0776ca6047b69308798029a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Player.PlayerParticle
+  particlePool: {fileID: 4712585716591042570, guid: a19fa62ad3334a048b9a320b1c8c912e, type: 3}
+  FeetPosition: {fileID: 7632684400072498038}
+  particleSpawnInterval: 0.2
+  runScale: {x: 0.5, y: 0.5, z: 0.5}
+  switchScale: {x: 1.5, y: 1.5, z: 1.5}
 --- !u!1 &8252948935716462345
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +267,7 @@ Transform:
   m_GameObject: {fileID: 8252948935716462345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -0.66, z: 0}
+  m_LocalPosition: {x: -0.43, y: -0.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
