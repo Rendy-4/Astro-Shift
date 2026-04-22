@@ -157,14 +157,13 @@ GameObject:
   - component: {fileID: 3016735282367724495}
   - component: {fileID: 1758075017784692996}
   - component: {fileID: 4491501859503355170}
-  - component: {fileID: 8696851684628173064}
   m_Layer: 5
   m_Name: Level_Panel
   m_TagString: LevelPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7907870068800612353
 RectTransform:
   m_ObjectHideFlags: 0
@@ -242,18 +241,6 @@ MonoBehaviour:
   - {fileID: 6154776053686973795}
   - {fileID: 276900061002118627}
   - {fileID: 1715772157398954584}
---- !u!225 &8696851684628173064
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600575370150422091}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1347654796838177984
 GameObject:
   m_ObjectHideFlags: 0

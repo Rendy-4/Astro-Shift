@@ -1,31 +1,49 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 using AstroShift.Manager;
 
 public class BackManager : MonoBehaviour
 {
-    [SerializeField] private GameObject levelSelect; // Referensi ke Level Select untuk ditampilkan saat kembali ke Main Menu
-
-    private void Start() {
-        if (EndScreenManager.Instance == null) return;
-
-        bool shouldOpen = EndScreenManager.Instance.IsLevelSelectOpen();
-        Debug.Log($"EndScreenManager.Instance: {EndScreenManager.Instance}");
-        Debug.Log($"IsLevelSelectOpen: {EndScreenManager.Instance?.IsLevelSelectOpen()}");
-
-        if (shouldOpen) {
-            HandleMainMenuLoaded();
-        }
+    // Hapus [SerializeField] - referensi ini tidak bisa diandalkan lintas scene
+    
+    private void OnEnable() {
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private void HandleMainMenuLoaded() {
-        if (levelSelect == null)
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (scene.name != "Main Menu") return;
+        StartCoroutine(CheckAndOpenLevelPanel());
+    }
+
+    private IEnumerator CheckAndOpenLevelPanel() {
+        yield return null; // Tunggu 1 frame agar EndScreenManager selesai set flag
+
+        if (EndScreenManager.Instance == null) yield break;
+
+        bool shouldOpen = EndScreenManager.Instance.IsLevelSelectOpen();
+        Debug.Log($"Apakah harus buka Level Select? {shouldOpen}");
+
+        if (!shouldOpen) yield break;
+
+        // Selalu cari fresh — jangan pakai cache referensi lintas scene
+        GameObject[] allObjects = FindObjectsByType<GameObject>(
+            FindObjectsInactive.Include, FindObjectsSortMode.None);
+            
+        foreach (GameObject obj in allObjects)
         {
-            levelSelect = GameObject.Find("Level_Panel");
+            if (obj.name == "Level_Panel" && obj.scene.name == "Main Menu")
+            {
+                obj.SetActive(true);
+                Debug.Log("Level_Panel berhasil diaktifkan!");
+                yield break;
+            }
         }
-        if (levelSelect != null) {
-            levelSelect.SetActive(true); // Tampilkan panel Level Select
-        } else {
-            Debug.LogWarning("Level_Panel not found in the Main Menu scene.");
-        }
+        
+        Debug.LogError("Gagal menemukan Level_Panel! Cek nama di Hierarchy.");
     }
 }
