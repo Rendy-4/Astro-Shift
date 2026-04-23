@@ -42,6 +42,7 @@ namespace AstroShift.Manager
             {
                 Destroy(gameObject);
             }
+            LoadSavedVolumes();
         }
 
         private void LoadSavedVolumes()
@@ -75,6 +76,12 @@ namespace AstroShift.Manager
             if (musicSource.clip == clip) return; // Cek jika musik yang sama sudah diputar
             musicSource.clip = clip;
             musicSource.loop = loop;
+            musicSource.Play();
+        }
+
+        public void RestartMusic()
+        {
+            musicSource.Stop();
             musicSource.Play();
         }
 

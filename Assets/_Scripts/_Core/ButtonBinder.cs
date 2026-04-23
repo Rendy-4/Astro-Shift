@@ -11,6 +11,8 @@ namespace AstroShift.Core
             Restart,
             LevelSelect,
             NextLevel,
+            Pause,
+            Resume
         }
         [SerializeField] private ButtonType buttonType; // Pilih jenis tombol di Inspector
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,6 +38,14 @@ namespace AstroShift.Core
             else if (buttonType == ButtonType.NextLevel)
             {
                 button.onClick.AddListener(() => EndScreenManager.Instance.NextLevel());
+            }
+            else if (buttonType == ButtonType.Pause)
+            {
+                button.onClick.AddListener(() => EndScreenManager.Instance.Pause());
+            }
+            else if (buttonType == ButtonType.Resume)
+            {
+                button.onClick.AddListener(() => EndScreenManager.Instance.Resume());
             }
         }
     }

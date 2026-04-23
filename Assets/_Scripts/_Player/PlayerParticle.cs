@@ -40,7 +40,7 @@ namespace AstroShift.Player
 
         private void SpawnDust(Vector3 scale, Vector3 position, bool isAtTop)
         {
-            if (particlePool == null) return;
+            if (particlePool == null || particlePool.gameObject == null) return;
 
             float yOffset = 0f;
             Vector3 spawnPosition = new Vector3(position.x, position.y + yOffset, position.z);
@@ -48,10 +48,13 @@ namespace AstroShift.Player
 
             GameObject dustObj = particlePool.Get(spawnPosition, dustRotation);
 
-            ParticlePool dustParticle = dustObj.GetComponent<ParticlePool>();
-            if (dustParticle != null)
+            if (dustObj == null) return;
             {
-                dustParticle.Play(particlePool, scale);
+                ParticlePool dustParticle = dustObj.GetComponent<ParticlePool>();
+                if (dustParticle != null)
+                {
+                    dustParticle.Play(particlePool, scale);
+                }
             }
         }
     }

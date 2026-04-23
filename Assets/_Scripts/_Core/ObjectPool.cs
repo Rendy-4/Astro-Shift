@@ -23,21 +23,30 @@ namespace AstroShift.Core
 
         public GameObject Get(Vector3 position, Quaternion rotation)
         {
-            GameObject obj;
+            if (this == null) return null;
+            GameObject obj = null;
 
-            if (pool.Count > 0)
+            while (pool.Count > 0 && obj == null)
             {
-                obj = pool.Dequeue();
+                GameObject candidate = pool.Dequeue();
+                if (candidate != null)
+                {
+                    obj = candidate;
+                    break;
+                }
             }
-            else
+
+            if (obj == null)
             {
-                // Jika stok habis, buat baru
                 obj = Instantiate(prefab);
             }
 
-            obj.transform.position = position;
-            obj.transform.rotation = rotation;
-            obj.SetActive(true);
+            if (obj == null) 
+            {
+                obj.transform.position = position;
+                obj.transform.rotation = rotation;
+                obj.SetActive(true);
+            }
             return obj;
         }
 

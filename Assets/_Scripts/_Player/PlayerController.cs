@@ -25,6 +25,7 @@ namespace AstroShift.Player
         private bool isFlipping = false;
         private PlayerParticle playerParticle;
         private PlayerShield playerShield;
+        private bool isDead = false;
 
         private float originalSpeed;
         private Coroutine speedBoostCoroutine;
@@ -45,6 +46,7 @@ namespace AstroShift.Player
 
         private void FixedUpdate()
         {
+            if (isDead) return;
             HandleAutomaticMovement();
             playerParticle.HandleDustEffects(IsTouchingSurface(), rb.linearVelocity.x, isFlipping);
         }
@@ -78,6 +80,7 @@ namespace AstroShift.Player
 
         public void SwitchGravity()
         {
+            if (isDead) return;
             AstroShift.Manager.LevelStastManager.clickCount++;
             Vector3 spawnPos = FeetPosition.position;
             bool wasAtTop = !isFlipping;
@@ -102,9 +105,16 @@ namespace AstroShift.Player
             }
         }
 
+        public void ManualDisable()
+        {
+            isDead = true;
+            rb.linearVelocity = Vector2.zero;
+            rb.simulated = false; 
+        }
+
         public void Die(GameObject killer = null)
         {
-
+            if (isDead) return;
             if (playerShield != null && playerShield.IsActive)
             {
                 playerShield.BreakShield();
@@ -115,6 +125,7 @@ namespace AstroShift.Player
                 }
                 return; 
             }
+            isDead = true;
             AstroShift.Manager.LevelStastManager.attemptCount++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

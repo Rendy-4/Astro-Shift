@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 using AstroShift.Player;
 
 namespace AstroShift.Manager
@@ -10,10 +11,17 @@ namespace AstroShift.Manager
         // Update is called once per frame
         void Update()
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
+            if (Time.timeScale > 0)
             {
-                Player.SwitchGravity();
+                if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    Player.SwitchGravity();
+                }
             }
+        }
+
+        private bool IsPointerOverUIObject() {
+            return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
         }
     }
 }

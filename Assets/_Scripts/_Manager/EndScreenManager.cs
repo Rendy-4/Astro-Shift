@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using AstroShift.Player;
 
 namespace AstroShift.Manager
 {
@@ -9,6 +10,7 @@ namespace AstroShift.Manager
         [SerializeField] private TextMeshProUGUI attemptsText;
         [SerializeField] private TextMeshProUGUI clicksText;
         [SerializeField] private GameObject endScreeenPanel;
+        [SerializeField] private GameObject PausePanel;
 
         private bool openSelectLevel = false;
         public static event System.Action OnMainMenuLoaded;
@@ -46,11 +48,12 @@ namespace AstroShift.Manager
             }
         }
 
-        public void SetUIReference(TextMeshProUGUI attempts, TextMeshProUGUI clicks, GameObject panel)
+        public void SetUIReference(TextMeshProUGUI attempts, TextMeshProUGUI clicks, GameObject panel, GameObject pausePanel)
         {
             attemptsText = attempts;
             clicksText = clicks;
             endScreeenPanel = panel;
+            PausePanel = pausePanel;
         }
 
         public void ShowEndScreen()
@@ -70,9 +73,17 @@ namespace AstroShift.Manager
             if (endScreeenPanel != null) endScreeenPanel.SetActive(true);
         }
 
+        private bool isRestarting = false;
         public void Restart()
         {
             Time.timeScale = 1f;
+            PlayerController player = Object.FindFirstObjectByType<PlayerController>();
+            if (player != null)
+            {
+                player.ManualDisable();
+            }
+            
+            if (AudioManager.Instance != null) AudioManager.Instance.RestartMusic();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
@@ -108,6 +119,18 @@ namespace AstroShift.Manager
             {
                 Debug.Log("No more levels available!");
             }
+        }
+
+        public void Pause()
+        {
+            Time.timeScale = 0f;
+            PausePanel.SetActive(true);
+        }
+
+        public void Resume()
+        {
+            Time.timeScale = 1f;
+            PausePanel.SetActive(false);
         }
 
         public void LoadScene(string sceneName)

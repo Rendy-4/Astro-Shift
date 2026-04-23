@@ -9,10 +9,12 @@ namespace AstroShift.Core
         [SerializeField] private TextMeshProUGUI attemptsText;
         [SerializeField] private TextMeshProUGUI clicksText;
         [SerializeField] private GameObject endScreeenPanel;
+        [SerializeField] private GameObject PausePanel;
+
         
         private void Start() {
             if (EndScreenManager.Instance != null) {
-                EndScreenManager.Instance.SetUIReference(attemptsText, clicksText, endScreeenPanel);
+                EndScreenManager.Instance.SetUIReference(attemptsText, clicksText, endScreeenPanel, PausePanel);
             }
         }
     }
