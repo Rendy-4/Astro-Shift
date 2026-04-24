@@ -43,10 +43,12 @@ namespace AstroShift.Core
 
             if (obj == null) 
             {
-                obj.transform.position = position;
-                obj.transform.rotation = rotation;
-                obj.SetActive(true);
+                obj = Instantiate(prefab);
             }
+
+            obj.transform.position = position;
+            obj.transform.rotation = rotation;
+            obj.SetActive(true);
             return obj;
         }
 
