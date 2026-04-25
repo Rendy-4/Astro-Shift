@@ -365,6 +365,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2460962106277379100, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e369e2028145f8045bb57470fbe67fa8, type: 3}
+    - target: {fileID: 2769090511992282304, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b9d04d03a9594574db7220c1871c72bf, type: 3}
+    - target: {fileID: 4443674568837010716, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 94e9c964abdd8ed46813e0beb93146a6, type: 3}
     - target: {fileID: 4950436495339557781, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -413,6 +425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5592257200138950877, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5179262187892367686, guid: 9f97519f6e06e2443b70894273001dee, type: 3}
     - target: {fileID: 5832382430045450421, guid: b7094f550c6a9e84fbec2a4a84020f8a, type: 3}
       propertyPath: m_Name
       value: ==CAMERAS==
