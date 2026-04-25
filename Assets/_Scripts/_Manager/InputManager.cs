@@ -15,7 +15,11 @@ namespace AstroShift.Manager
             {
                 if (Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame)
                 {
-                    Player.SwitchGravity();
+                    if (!IsPointerOverUIObject())
+                    {
+                        Player.SwitchGravity();
+                    }
+                    
                 }
             }
         }

@@ -579,6 +579,7 @@ MonoBehaviour:
   attemptsText: {fileID: 137064570}
   clicksText: {fileID: 137064569}
   endScreeenPanel: {fileID: 137064567}
+  PausePanel: {fileID: 0}
 --- !u!114 &347644858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3808,6 +3809,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2711963538108086214, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
+      propertyPath: deathSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: b17a891ca6fc0ab488f370a76da006c0, type: 3}
+    - target: {fileID: 2711963538108086214, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
       propertyPath: audioMixer
       value: 
       objectReference: {fileID: 24100000, guid: 314af29e725626745aa01911629f673c, type: 2}
@@ -3819,6 +3824,10 @@ PrefabInstance:
       propertyPath: levelSelect
       value: 
       objectReference: {fileID: 161314477}
+    - target: {fileID: 5411480776983243050, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
+      propertyPath: m_TagString
+      value: Audio
+      objectReference: {fileID: 0}
     - target: {fileID: 7699640446618703900, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
       propertyPath: oxygenBar
       value: 

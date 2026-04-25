@@ -17,6 +17,7 @@ namespace AstroShift.Manager
         [Header("Button SFX Clips")]
         [SerializeField] private AudioClip clickInSfx;
         [SerializeField] private AudioClip clickOutSfx;
+        [SerializeField] private AudioClip deathSfx;
 
         private const string MUSIC_KEY = "MusicVolume";
         private const string SFX_KEY = "SFXVolume";
@@ -36,7 +37,6 @@ namespace AstroShift.Manager
                     if (objName == "music") musicSource = src;
                     if (objName == "sfx") sfxSource = src;
                 }
-                DontDestroyOnLoad(gameObject);
             } 
             else 
             {
@@ -84,6 +84,8 @@ namespace AstroShift.Manager
             musicSource.Stop();
             musicSource.Play();
         }
+        public void PauseMusic() => musicSource.Pause();
+        public void UnpauseMusic() => musicSource.UnPause();
 
         public void playSfx(AudioClip clip)
         {
@@ -96,5 +98,6 @@ namespace AstroShift.Manager
 
         public void PlayClickInSfx() => playSfx(clickInSfx);
         public void PlayClickOutSfx() => playSfx(clickOutSfx);
+        public void PlayDeathSfx() => playSfx(deathSfx);
     }
 }

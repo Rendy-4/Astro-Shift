@@ -26,6 +26,7 @@ namespace AstroShift.Player
         private PlayerParticle playerParticle;
         private PlayerShield playerShield;
         private bool isDead = false;
+        private Animator animator;
 
         private float originalSpeed;
         private Coroutine speedBoostCoroutine;
@@ -35,6 +36,7 @@ namespace AstroShift.Player
             rb = GetComponent<Rigidbody2D>();
             playerParticle = GetComponent<PlayerParticle>();
             playerShield = GetComponent<PlayerShield>();
+            animator = GetComponentInChildren<Animator>();
 
             originalSpeed = moveSpeed;
         }
@@ -125,8 +127,16 @@ namespace AstroShift.Player
                 }
                 return; 
             }
-            isDead = true;
+            ManualDisable();
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayDeathSfx();
+            if (animator != null) animator.SetBool("isDeath", true);
             AstroShift.Manager.LevelStastManager.attemptCount++;
+            StartCoroutine(DieAfterAnimatoin());
+        }
+
+        private IEnumerator DieAfterAnimatoin()
+        {
+            yield return new WaitForSeconds(0.55f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 

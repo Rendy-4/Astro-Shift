@@ -37,6 +37,11 @@ namespace AstroShift.Core
             }
             else if (buttonType == ButtonType.NextLevel)
             {
+                if (EndScreenManager.Instance.IsLastLevel())
+                {
+                    gameObject.SetActive(false);
+                    return;
+                }
                 button.onClick.AddListener(() => EndScreenManager.Instance.NextLevel());
             }
             else if (buttonType == ButtonType.Pause)

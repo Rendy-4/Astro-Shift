@@ -73,7 +73,6 @@ namespace AstroShift.Manager
             if (endScreeenPanel != null) endScreeenPanel.SetActive(true);
         }
 
-        private bool isRestarting = false;
         public void Restart()
         {
             Time.timeScale = 1f;
@@ -105,6 +104,11 @@ namespace AstroShift.Manager
             return false;
         }
 
+        public bool IsLastLevel()
+        {
+            return SceneManager.GetActiveScene().buildIndex >= SceneManager.sceneCountInBuildSettings - 1;
+        }
+
         public void NextLevel()
         {
             LevelStastManager.ResetStats();
@@ -114,6 +118,7 @@ namespace AstroShift.Manager
             {
                 Time.timeScale = 1f;
                 SceneManager.LoadScene(nextSceneIndex);
+                LevelStastManager.ResetStats();
             }
             else
             {
@@ -124,6 +129,7 @@ namespace AstroShift.Manager
         public void Pause()
         {
             Time.timeScale = 0f;
+            if (AudioManager.Instance != null) AudioManager.Instance.PauseMusic();
             PausePanel.SetActive(true);
         }
 
@@ -131,6 +137,7 @@ namespace AstroShift.Manager
         {
             Time.timeScale = 1f;
             PausePanel.SetActive(false);
+            if (AudioManager.Instance != null) AudioManager.Instance.UnpauseMusic();
         }
 
         public void LoadScene(string sceneName)
