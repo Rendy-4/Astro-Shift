@@ -83,6 +83,7 @@ namespace AstroShift.Player
         public void SwitchGravity()
         {
             if (isDead) return;
+            if (!IsTouchingSurface()) return;
             AstroShift.Manager.LevelStastManager.clickCount++;
             Vector3 spawnPos = FeetPosition.position;
             bool wasAtTop = !isFlipping;

@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Player.PlayerController
   flipDuration: 0.3
   charVisual: {fileID: 1541832750209229098}
-  moveSpeed: 3
+  moveSpeed: 4
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Player.PlayerParticle
   particlePool: {fileID: 4712585716591042570, guid: a19fa62ad3334a048b9a320b1c8c912e, type: 3}
   FeetPosition: {fileID: 7632684400072498038}
-  particleSpawnInterval: 0.2
+  particleSpawnInterval: 0.18
   runScale: {x: 0.5, y: 0.5, z: 0.5}
   switchScale: {x: 1.5, y: 1.5, z: 1.5}
 --- !u!1 &8252948935716462345
