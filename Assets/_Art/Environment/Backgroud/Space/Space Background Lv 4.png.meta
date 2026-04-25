@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 199d273369f82ba4687702f904e35d03
+guid: 94e9c964abdd8ed46813e0beb93146a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 654124916491854606
-    second: Planet Background Lv 2_0
-  - first:
-      213: -1930465858901738550
-    second: Planet Background Lv 2_1
-  - first:
-      213: 6701673649362593541
-    second: Planet Background Lv 2_2
+      213: -4459943886816351424
+    second: Space Background Lv 4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Planet Background Lv 2_0
+      name: Space Background Lv 4_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 132
-        width: 56
-        height: 56
+        x: 0
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e03aa36552be31900800000000000000
-      internalID: 654124916491854606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planet Background Lv 2_1
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 185
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: acb7425878b9535e0800000000000000
-      internalID: -1930465858901738550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planet Background Lv 2_2
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 49
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5076ad65da0210d50800000000000000
-      internalID: 6701673649362593541
+      spriteID: 04be22c2aa81b12c0800000000000000
+      internalID: -4459943886816351424
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Planet Background Lv 2_0: 654124916491854606
-      Planet Background Lv 2_1: -1930465858901738550
-      Planet Background Lv 2_2: 6701673649362593541
+      Space Background Lv 4_0: -4459943886816351424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
