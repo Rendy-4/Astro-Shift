@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using AstroShift.Player;
 using AstroShift.Manager;
+using System.Collections;
 
 namespace AstroShift.Manager
 {
@@ -121,11 +122,28 @@ namespace AstroShift.Manager
 
             if (progressText != null) progressText.text = "100%";
             if (progressBar != null) progressBar.fillAmount = 1f;
-            if (EndScreenManager.Instance != null) 
+
+            StartCoroutine(FinishAfterSfx());
+        }
+
+        private IEnumerator FinishAfterSfx()
+        {
+            PlayerController player = Object.FindFirstObjectByType<PlayerController>();
+            if (player != null) player.ManualDisable();
+
+            if (SettingManager.Instance != null)
+            {
+                SettingManager.Instance.PlayInPortalSfx();
+            }
+
+            yield return new WaitForSecondsRealtime(0.35f);
+
+            if (EndScreenManager.Instance != null)
             {
                 EndScreenManager.Instance.ShowEndScreen();
             }
-            Time.timeScale = 0f; 
+
+            Time.timeScale = 0f;
         }
     }
 }

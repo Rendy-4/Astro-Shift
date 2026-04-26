@@ -44,17 +44,29 @@ namespace AstroShift.Core
                     {
                         OxygenManager.Instance.RefillOxygen(Amount);   
                     }
+                    if (SettingManager.Instance != null)
+                    {
+                        SettingManager.Instance.PlayOxygenSfx();
+                    }
                     break;
                 case ItemType.Shield:
                     if (playerShield != null)
                     {
                         playerShield.ActiveShield(Duration);
                     }
+                    if (SettingManager.Instance != null)
+                    {
+                        SettingManager.Instance.PlayShieldSfx();
+                    }
                     break;
                 case ItemType.SpeedBoost:
                     if (playerController != null)
                     {
                         playerController.ApplySpeedBoost(multiplier, Duration);
+                    }
+                    if (SettingManager.Instance != null)
+                    {
+                        SettingManager.Instance.PlaySpeedSfx();
                     }
                     break;
             }

@@ -14,10 +14,14 @@ namespace AstroShift.Manager
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource sfxSource;
 
-        [Header("Button SFX Clips")]
+        [Header("SFX Clips")]
         [SerializeField] private AudioClip clickInSfx;
         [SerializeField] private AudioClip clickOutSfx;
         [SerializeField] private AudioClip deathSfx;
+        [SerializeField] private AudioClip inPortalSfx;
+        [SerializeField] private AudioClip oxygenSfx;
+        [SerializeField] private AudioClip shieldSfx;
+        [SerializeField] private AudioClip speedSfx;
 
         private const string MUSIC_KEY = "MusicVolume";
         private const string SFX_KEY = "SFXVolume";
@@ -99,5 +103,9 @@ namespace AstroShift.Manager
         public void PlayClickInSfx() => playSfx(clickInSfx);
         public void PlayClickOutSfx() => playSfx(clickOutSfx);
         public void PlayDeathSfx() => playSfx(deathSfx);
+        public void PlayInPortalSfx() => playSfx(inPortalSfx);
+        public void PlayOxygenSfx() => playSfx(oxygenSfx);
+        public void PlayShieldSfx() => playSfx(shieldSfx);
+        public void PlaySpeedSfx() => playSfx(speedSfx);
     }
 }
