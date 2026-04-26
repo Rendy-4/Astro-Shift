@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 349562565}
   - component: {fileID: 349562564}
   - component: {fileID: 349562563}
+  - component: {fileID: 349562566}
   m_Layer: 5
   m_Name: Quit_Btn
   m_TagString: Untagged
@@ -713,6 +714,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349562561}
   m_CullTransparentMesh: 1
+--- !u!114 &349562566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349562561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a1bdee51eaa66488bf833d53abe49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Core.ButtonHover
+  hoverScale: 1.2
+  hoverDuration: 0.2
 --- !u!1 &376126740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2006,7 @@ GameObject:
   - component: {fileID: 1109567798}
   - component: {fileID: 1109567797}
   - component: {fileID: 1109567796}
+  - component: {fileID: 1109567799}
   m_Layer: 5
   m_Name: 'Settings_Btn '
   m_TagString: Untagged
@@ -2124,6 +2140,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109567794}
   m_CullTransparentMesh: 1
+--- !u!114 &1109567799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109567794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a1bdee51eaa66488bf833d53abe49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Core.ButtonHover
+  hoverScale: 1.2
+  hoverDuration: 0.2
 --- !u!1 &1131757235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2790,7 @@ GameObject:
   - component: {fileID: 1669330637}
   - component: {fileID: 1669330636}
   - component: {fileID: 1669330635}
+  - component: {fileID: 1669330638}
   m_Layer: 5
   m_Name: Play_Btn
   m_TagString: Untagged
@@ -2893,6 +2924,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669330633}
   m_CullTransparentMesh: 1
+--- !u!114 &1669330638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669330633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a1bdee51eaa66488bf833d53abe49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Core.ButtonHover
+  hoverScale: 1.2
+  hoverDuration: 0.2
 --- !u!1 &1700852445
 GameObject:
   m_ObjectHideFlags: 0
