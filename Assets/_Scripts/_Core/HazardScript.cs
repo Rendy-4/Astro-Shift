@@ -27,8 +27,16 @@ namespace AstroShift.Core
                 if (damageable != null)
                 {
                     damageable.Die(this.gameObject); // Memanggil metode Die() pada player
-                }
-                
+                }   
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            IDamageable damageable = other.gameObject.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.Die(this.gameObject); // Memanggil metode Die() pada player
+            }
         }
     }
 }

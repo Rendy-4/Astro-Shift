@@ -40,7 +40,10 @@ namespace AstroShift.Core
             switch (itemType)
             {
                 case ItemType.Oxygen:
-                    OxygenManager.Instance.RefillOxygen(Amount);
+                    if (OxygenManager.Instance != null)
+                    {
+                        OxygenManager.Instance.RefillOxygen(Amount);   
+                    }
                     break;
                 case ItemType.Shield:
                     if (playerShield != null)

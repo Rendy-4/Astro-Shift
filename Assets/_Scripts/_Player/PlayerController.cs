@@ -118,6 +118,8 @@ namespace AstroShift.Player
         public void Die(GameObject killer = null)
         {
             if (isDead) return;
+
+            Debug.Log($"Die dipanggil. Shield; {playerShield}, IsActive; {playerShield?.IsActive}");
             if (playerShield != null && playerShield.IsActive)
             {
                 playerShield.BreakShield();

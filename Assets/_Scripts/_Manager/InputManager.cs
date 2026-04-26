@@ -8,6 +8,8 @@ namespace AstroShift.Manager
     public class InputManager : MonoBehaviour
     {
         [SerializeField] private PlayerController Player;
+
+        public static event System.Action OnGravityInput;
         // Update is called once per frame
         void Update()
         {
@@ -18,6 +20,7 @@ namespace AstroShift.Manager
                     if (!IsPointerOverUIObject())
                     {
                         Player.SwitchGravity();
+                        OnGravityInput?.Invoke();
                     }
                     
                 }
