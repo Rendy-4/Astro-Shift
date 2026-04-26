@@ -27,7 +27,7 @@ namespace AstroShift.Core
                 // Pastikan yang menyentuh adalah player
                 if (other.CompareTag("Player"))
                 {
-                    playerShield = other.GetComponent<PlayerShield>();
+                    playerShield = other.GetComponentInChildren<PlayerShield>();
                     playerController = other.GetComponent<PlayerController>();
 
                     ApplyEffect(); // Terapkan efek item ke player

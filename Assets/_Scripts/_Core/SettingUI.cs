@@ -11,17 +11,17 @@ namespace AstroShift.Core
         [SerializeField] private Slider sfxSlider;
 
         private void OnEnable() {
-            if (AudioManager.Instance == null)
+            if (SettingManager.Instance == null)
             {
                 Debug.Log("AudioManager.Instance is null");
                 return;
             }
             
-            musicSlider.value = AudioManager.Instance.GetMusicVolume();
-            sfxSlider.value = AudioManager.Instance.GetSFXVolume();
+            musicSlider.value = SettingManager.Instance.GetMusicVolume();
+            sfxSlider.value = SettingManager.Instance.GetSFXVolume();
 
-            musicSlider.onValueChanged.AddListener(AudioManager.Instance.SetMusicVolume);
-            sfxSlider.onValueChanged.AddListener(AudioManager.Instance.SetSFXVolume);
+            musicSlider.onValueChanged.AddListener(SettingManager.Instance.SetMusicVolume);
+            sfxSlider.onValueChanged.AddListener(SettingManager.Instance.SetSFXVolume);
         }
 
         private void OnDisable() {

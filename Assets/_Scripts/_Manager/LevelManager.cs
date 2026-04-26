@@ -26,8 +26,8 @@ namespace AstroShift.Manager
         }
         public void OpenLevel(int Level_ID)
         {
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.PlayClickInSfx();
+            if (SettingManager.Instance != null) {
+                SettingManager.Instance.PlayClickInSfx();
             }
 
             string sceneName = "Level " + Level_ID;

@@ -8,8 +8,8 @@ namespace AstroShift.Enviroment
         [SerializeField] private AudioClip levelMusicClip;
 
         private void Start() {
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.PlayMusic(levelMusicClip);
+            if (SettingManager.Instance != null) {
+                SettingManager.Instance.PlayMusic(levelMusicClip);
             }
         }
     }

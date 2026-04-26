@@ -131,7 +131,7 @@ namespace AstroShift.Player
                 return; 
             }
             ManualDisable();
-            if (AudioManager.Instance != null) AudioManager.Instance.PlayDeathSfx();
+            if (SettingManager.Instance != null) SettingManager.Instance.PlayDeathSfx();
             if (animator != null) animator.SetBool("isDeath", true);
             AstroShift.Manager.LevelStastManager.attemptCount++;
             StartCoroutine(DieAfterAnimatoin());

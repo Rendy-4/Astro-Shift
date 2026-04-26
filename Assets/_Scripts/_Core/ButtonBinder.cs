@@ -29,8 +29,8 @@ namespace AstroShift.Core
             else if (buttonType == ButtonType.LevelSelect)
             {
                 button.onClick.AddListener(() =>{
-                    if (AudioManager.Instance != null) {
-                        AudioManager.Instance.PlayClickOutSfx();
+                    if (SettingManager.Instance != null) {
+                        SettingManager.Instance.PlayClickOutSfx();
                     }
                 });
                 button.onClick.AddListener(() => EndScreenManager.Instance.LevelSelect());

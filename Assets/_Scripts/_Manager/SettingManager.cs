@@ -3,9 +3,9 @@ using UnityEngine.Audio;
 
 namespace AstroShift.Manager
 {
-    public class AudioManager : MonoBehaviour
+    public class SettingManager : MonoBehaviour
     {
-        public static AudioManager Instance { get; private set; }
+        public static SettingManager Instance { get; private set; }
 
         [Header("Audio Mixers")]
         [SerializeField] private AudioMixer audioMixer;

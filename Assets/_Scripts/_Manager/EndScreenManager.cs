@@ -82,7 +82,7 @@ namespace AstroShift.Manager
                 player.ManualDisable();
             }
             
-            if (AudioManager.Instance != null) AudioManager.Instance.RestartMusic();
+            if (SettingManager.Instance != null) SettingManager.Instance.RestartMusic();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
@@ -129,7 +129,7 @@ namespace AstroShift.Manager
         public void Pause()
         {
             Time.timeScale = 0f;
-            if (AudioManager.Instance != null) AudioManager.Instance.PauseMusic();
+            if (SettingManager.Instance != null) SettingManager.Instance.PauseMusic();
             PausePanel.SetActive(true);
         }
 
@@ -137,7 +137,7 @@ namespace AstroShift.Manager
         {
             Time.timeScale = 1f;
             PausePanel.SetActive(false);
-            if (AudioManager.Instance != null) AudioManager.Instance.UnpauseMusic();
+            if (SettingManager.Instance != null) SettingManager.Instance.UnpauseMusic();
         }
 
         public void LoadScene(string sceneName)
