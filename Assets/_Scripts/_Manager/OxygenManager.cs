@@ -54,7 +54,7 @@ namespace AstroShift.Manager
                 oxygenBar = oxygenBarObj.GetComponent<Image>();
                 UpdateOxygenBar();
             } else {
-                Debug.LogWarning("Oxygen bar UI tidak ditemukan di scene!");
+                Debug.Log("Oxygen bar UI tidak ditemukan di scene!");
             }
         }
 

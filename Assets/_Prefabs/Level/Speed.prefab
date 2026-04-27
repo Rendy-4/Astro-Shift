@@ -153,5 +153,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Core.PickUpItem
   itemType: 2
   Amount: 30
-  Duration: 5
-  multiplier: 1.5
+  Duration: 15
+  multiplier: 2
