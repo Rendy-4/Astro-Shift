@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AstroShift.Core.PickUpOxygen
   itemType: 0
-  Amount: 50
+  Amount: 65
   Duration: 5
   multiplier: 2
 --- !u!61 &2980806969606557005

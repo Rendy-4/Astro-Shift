@@ -22,13 +22,17 @@ namespace AstroShift.Player
         [SerializeField] private Transform FeetPosition;
 
         private Rigidbody2D rb;
-        private bool isFlipping = false;
         private PlayerParticle playerParticle;
         private PlayerShield playerShield;
-        private bool isDead = false;
         private Animator animator;
 
+        private bool isDead = false;
+        private bool isFlipping = false;
         private float originalSpeed;
+        private bool isBuffered = false;
+        private float bufferTime = 0f;
+        private float bufferTimer = 0f;
+
         private Coroutine speedBoostCoroutine;
 
         private void Awake()
@@ -46,11 +50,22 @@ namespace AstroShift.Player
             isFlipping = rb.gravityScale > 0;
         }
 
+        private void Update() {
+            if (bufferTimer > 0f) bufferTimer -= Time.deltaTime;
+        }
+
         private void FixedUpdate()
         {
             if (isDead) return;
             HandleAutomaticMovement();
             playerParticle.HandleDustEffects(IsTouchingSurface(), rb.linearVelocity.x, isFlipping);
+
+            if (isBuffered && IsTouchingSurface() && bufferTimer <= 0f)
+            {
+                isBuffered = false;
+                bufferTimer = 0f;
+                ExecuteSwitchGravity();
+            }
         }
 
         private void HandleAutomaticMovement()
@@ -83,11 +98,23 @@ namespace AstroShift.Player
         public void SwitchGravity()
         {
             if (isDead) return;
-            if (!IsTouchingSurface()) return;
+            if (IsTouchingSurface())
+            {
+                ExecuteSwitchGravity();
+            }
+            else
+            {
+                isBuffered = true;
+                bufferTimer = bufferTime;
+            }
+                
+        }
+
+        private void ExecuteSwitchGravity()
+        {
             AstroShift.Manager.LevelStastManager.clickCount++;
             Vector3 spawnPos = FeetPosition.position;
             bool wasAtTop = !isFlipping;
-            bool wasOnSurface = IsTouchingSurface();
 
             rb.gravityScale *= -1;
             isFlipping = rb.gravityScale > 0;
@@ -99,13 +126,12 @@ namespace AstroShift.Player
 
             FeetPosition.localPosition = new Vector3(FeetPosition.localPosition.x, targetFeetY, FeetPosition.localPosition.z);
 
+            charVisual.DOKill();
             charVisual.DORotate(new Vector3(0, 0, targetRotation), flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
+            
             charVisual.DOScaleX(targetFlip, flipDuration).SetEase(Ease.InOutSine).SetLink(gameObject);
 
-            if (wasOnSurface)
-            {
-                playerParticle.SpawnSwitchDust(spawnPos, wasAtTop);
-            }
+            playerParticle.SpawnSwitchDust(spawnPos, wasAtTop);
         }
 
         public void ManualDisable()
