@@ -227,7 +227,7 @@ RectTransform:
   m_Father: {fileID: 658676802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -900,10 +900,10 @@ RectTransform:
   - {fileID: 1572076648}
   m_Father: {fileID: 624141662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379618142
 MonoBehaviour:
@@ -1142,7 +1142,7 @@ RectTransform:
   m_Father: {fileID: 589094816}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1685,7 +1685,7 @@ RectTransform:
   m_Father: {fileID: 836104611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2991,7 +2991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1700852446
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3120,7 +3120,7 @@ RectTransform:
   m_Father: {fileID: 1813221303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3486,6 +3486,10 @@ PrefabInstance:
       propertyPath: inPortalSfx
       value: 
       objectReference: {fileID: 8300000, guid: e5aeb9ee113da854ea6ee7258fbd871b, type: 3}
+    - target: {fileID: 2711963538108086214, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
+      propertyPath: shieldBreaksfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 62f02fe3cc468fa47bfadeaa880f8b35, type: 3}
     - target: {fileID: 3507680963337551727, guid: 5ffd46413c7ad344d81f7dfd851de627, type: 3}
       propertyPath: m_Name
       value: ==System Manager== 1
@@ -3540,10 +3544,10 @@ RectTransform:
   - {fileID: 1131757236}
   m_Father: {fileID: 624141662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -230}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942637087
 MonoBehaviour:

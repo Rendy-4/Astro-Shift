@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using AstroShift.Manager;
 
 namespace AstroShift.Player
 {
@@ -28,6 +29,10 @@ namespace AstroShift.Player
             if (shieldVisual != null) 
             {
                 shieldVisual.SetActive(false);
+            }
+            if (SettingManager.Instance != null)
+            {
+                SettingManager.Instance.PlayShieldBreaksfx();
             }
         }
 

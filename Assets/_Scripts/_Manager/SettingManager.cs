@@ -21,6 +21,7 @@ namespace AstroShift.Manager
         [SerializeField] private AudioClip inPortalSfx;
         [SerializeField] private AudioClip oxygenSfx;
         [SerializeField] private AudioClip shieldSfx;
+        [SerializeField] private AudioClip shieldBreaksfx;
         [SerializeField] private AudioClip speedSfx;
 
         private const string MUSIC_KEY = "MusicVolume";
@@ -106,6 +107,7 @@ namespace AstroShift.Manager
         public void PlayInPortalSfx() => playSfx(inPortalSfx);
         public void PlayOxygenSfx() => playSfx(oxygenSfx);
         public void PlayShieldSfx() => playSfx(shieldSfx);
+        public void PlayShieldBreaksfx() => playSfx(shieldBreaksfx);
         public void PlaySpeedSfx() => playSfx(speedSfx);
     }
 }
