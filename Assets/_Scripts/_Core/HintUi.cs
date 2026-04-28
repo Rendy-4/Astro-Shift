@@ -27,7 +27,7 @@ namespace AstroShift.Core
             canvasGroup = hintPanel.GetComponent<CanvasGroup>();
             if (canvasGroup == null)
             {
-                canvasGroup = hintPanel.GetComponent<CanvasGroup>();
+                canvasGroup = hintPanel.AddComponent<CanvasGroup>();
             }
 
             InputManager.OnGravityInput += OnGravityPressed;
@@ -42,7 +42,7 @@ namespace AstroShift.Core
             if (isPulsing)
             {
                 time += Time.deltaTime;
-                float alpha = Mathf.Lerp(pulseMin, pulseMax, (Mathf.Sin(time) + 1) / 2);
+                float alpha = Mathf.Lerp(pulseMin, pulseMax, (Mathf.Sin(time * pulseSpeed) + 1) / 2);
                 canvasGroup.alpha = alpha;
             }
         }

@@ -43,7 +43,6 @@ namespace AstroShift.Manager
             {
                 openSelectLevel = false;
                 isLevelSelectOpen = true;
-                Debug.Log("isLevelSelectOpen: true");
                 OnMainMenuLoaded?.Invoke();
             }
         }
@@ -58,12 +57,11 @@ namespace AstroShift.Manager
 
         public void ShowEndScreen()
         {
-            Debug.Log("ShowEndScreen dipanggil!");
             if (attemptsText != null && clicksText != null)
             {
                 attemptsText.text = "ATTEMPTS: " + LevelStastManager.attemptCount.ToString();
                 clicksText.text = "CLICKS: " + LevelStastManager.clickCount.ToString();
-                Debug.Log($"Update UI: Attempts={LevelStastManager.attemptCount}, Clicks={LevelStastManager.clickCount}");
+                
             }
             else 
             {
@@ -90,7 +88,6 @@ namespace AstroShift.Manager
         {
             Time.timeScale = 1f;
             openSelectLevel = true;
-            Debug.Log("LevelSelect() dipanggil!, openSelectLevel: true");
             SceneManager.LoadScene("Main Menu");
         }
 
@@ -118,7 +115,6 @@ namespace AstroShift.Manager
             {
                 Time.timeScale = 1f;
                 SceneManager.LoadScene(nextSceneIndex);
-                LevelStastManager.ResetStats();
             }
             else
             {

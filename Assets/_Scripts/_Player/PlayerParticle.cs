@@ -14,7 +14,6 @@ namespace AstroShift.Player
 
         private float dustTimer = 0f;
 
-        // Dipanggil dari PlayerController setiap FixedUpdate
         public void HandleDustEffects(bool isTouchingSurface, float velocityX, bool isFlipping)
         {
             if (isTouchingSurface && Mathf.Abs(velocityX) > 0.1f)
@@ -32,7 +31,6 @@ namespace AstroShift.Player
             }
         }
 
-        // Dipanggil dari PlayerController saat SwitchGravity
         public void SpawnSwitchDust(Vector3 spawnPos, bool wasAtTop)
         {
             SpawnDust(switchScale, spawnPos, wasAtTop);

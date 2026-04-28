@@ -6,7 +6,6 @@ using AstroShift.Manager;
 namespace AstroShift.Core {
     public class BackManager : MonoBehaviour
     {
-        // Hapus [SerializeField] - referensi ini tidak bisa diandalkan lintas scene
         
         private void OnEnable() {
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -25,27 +24,24 @@ namespace AstroShift.Core {
             yield return null; // Tunggu 1 frame agar EndScreenManager selesai set flag
 
             if (EndScreenManager.Instance == null) yield break;
+            if (!EndScreenManager.Instance.IsLevelSelectOpen()) yield break;
 
-            bool shouldOpen = EndScreenManager.Instance.IsLevelSelectOpen();
-            Debug.Log($"Apakah harus buka Level Select? {shouldOpen}");
-
-            if (!shouldOpen) yield break;
-
-            // Selalu cari fresh — jangan pakai cache referensi lintas scene
-            GameObject[] allObjects = FindObjectsByType<GameObject>(
-                FindObjectsInactive.Include, FindObjectsSortMode.None);
-                
-            foreach (GameObject obj in allObjects)
+            GameObject canvas = GameObject.Find("Canvas Main Menu");
+            if (canvas == null)
             {
-                if (obj.name == "Level_Panel" && obj.scene.name == "Main Menu")
-                {
-                    obj.SetActive(true);
-                    Debug.Log("Level_Panel berhasil diaktifkan!");
-                    yield break;
-                }
+                Debug.Log("Canvas Main Menu not found!");
+                yield break;
             }
             
-            Debug.LogError("Gagal menemukan Level_Panel! Cek nama di Hierarchy.");
+            Transform levelPanel = canvas.transform.Find("Level_Panel");
+            if (levelPanel != null)
+            {
+                levelPanel.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.LogError("Level_Panel not found!");
+            }
         }
     }    
 }

@@ -38,5 +38,16 @@ namespace AstroShift.Core
                         .SetUpdate(true)
                 );
         }
+
+        private void OnDisable()
+        {
+            transform.DOKill();
+            transform.localScale = originalScale;
+        }
+
+        private void OnDestroy()
+        {
+            transform.DOKill();
+        }
     }    
 }

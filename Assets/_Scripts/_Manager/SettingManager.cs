@@ -35,8 +35,8 @@ namespace AstroShift.Manager
                 // Auto-assign dari children
                 AudioSource[] sources = GetComponentsInChildren<AudioSource>(true);
                 foreach (var src in sources) {
-                    src.gameObject.SetActive(true); // Pastikan aktif untuk deteksi
-                    src.enabled = true; // Pastikan komponen aktif
+                    src.gameObject.SetActive(true);
+                    src.enabled = true;
 
                     string objName = src.gameObject.name.ToLower();
                     if (objName == "music") musicSource = src;
@@ -78,7 +78,7 @@ namespace AstroShift.Manager
 
         public void PlayMusic(AudioClip clip, bool loop = true)
         {
-            if (musicSource.clip == clip) return; // Cek jika musik yang sama sudah diputar
+            if (musicSource.clip == clip) return;
             musicSource.clip = clip;
             musicSource.loop = loop;
             musicSource.Play();
@@ -94,11 +94,10 @@ namespace AstroShift.Manager
 
         public void playSfx(AudioClip clip)
         {
-            if (clip != null)
-            {
-                
-                sfxSource.PlayOneShot(clip);
-            }
+            if (clip == null) return;
+            if (sfxSource == null || !sfxSource.enabled || !sfxSource.gameObject.activeInHierarchy) return;
+            
+            sfxSource.PlayOneShot(clip);
         }
 
         public void PlayClickInSfx() => playSfx(clickInSfx);

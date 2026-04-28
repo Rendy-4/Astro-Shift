@@ -31,7 +31,7 @@ namespace AstroShift.Player
         private float originalSpeed;
         private bool isBuffered = false;
         private float bufferTime = 0f;
-        private float bufferTimer = 0f;
+        private float bufferTimer = 0.15f;
 
         private Coroutine speedBoostCoroutine;
 
@@ -57,13 +57,13 @@ namespace AstroShift.Player
         private void FixedUpdate()
         {
             if (isDead) return;
+            bool onSurface = IsTouchingSurface();
             HandleAutomaticMovement();
-            playerParticle.HandleDustEffects(IsTouchingSurface(), rb.linearVelocity.x, isFlipping);
+            playerParticle.HandleDustEffects(onSurface, rb.linearVelocity.x, isFlipping);
 
             if (isBuffered && IsTouchingSurface() && bufferTimer <= 0f)
             {
                 isBuffered = false;
-                bufferTimer = 0f;
                 ExecuteSwitchGravity();
             }
         }
@@ -145,7 +145,6 @@ namespace AstroShift.Player
         {
             if (isDead) return;
 
-            Debug.Log($"Die dipanggil. Shield; {playerShield}, IsActive; {playerShield?.IsActive}");
             if (playerShield != null && playerShield.IsActive)
             {
                 playerShield.BreakShield();

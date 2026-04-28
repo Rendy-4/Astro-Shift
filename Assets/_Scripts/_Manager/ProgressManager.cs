@@ -19,7 +19,7 @@ namespace AstroShift.Manager
         [SerializeField] private GameObject levelEndPoint;
         private float levelLength;
         private float startPosX;
-        private bool isFinished = false; // TAMBAHKAN INI agar tidak error di Update
+        private bool isFinished = false;
 
         [Header("End Screen")]
         [SerializeField] private GameObject endScreen;
@@ -33,21 +33,12 @@ namespace AstroShift.Manager
         
         private float currentDisplayProgress = 0f;
 
-        private void Awake() {
-            if (progressText == null) progressText = GameObject.Find("Score Text")?.GetComponent<TextMeshProUGUI>();
-            if (progressBar == null) progressBar = GameObject.Find("Mask")?.GetComponent<Image>();
-            if (endScreen == null) endScreen = GameObject.Find("Level End Screen");
-            if (playerPrefab == null) playerPrefab = GameObject.Find("Player Container"); // Pastikan prefab ada di folder Resources
-            
-        }
-
         void Start()
         {
             Time.timeScale = 1f;
 
             GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
             
-            // Cari player yang sudah ada di scene dulu
             if (playerTransform == null)
             {
                 GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -55,14 +46,12 @@ namespace AstroShift.Manager
                     playerTransform = existingPlayer.transform;
             }
 
-            // Kalau masih null, spawn dari prefab
             if (playerTransform == null && playerPrefab != null && spawnPoint != null)
             {
                 GameObject playerObj = Instantiate(playerPrefab, spawnPoint.transform.position, Quaternion.identity);
-                playerTransform = playerObj.transform; // ← Assign transform-nya!
+                playerTransform = playerObj.transform;
             }
 
-            // Teleport ke spawn point
             if (spawnPoint != null && playerTransform != null)
             {
                 Rigidbody2D rb = playerTransform.GetComponent<Rigidbody2D>();
@@ -74,7 +63,6 @@ namespace AstroShift.Manager
                 }
                 playerTransform.position = spawnPoint.transform.position;
                 startPosX = playerTransform.position.x;
-                Debug.Log("Player at: " + playerTransform.position);
             }
 
             if (levelEndPoint != null)
@@ -105,10 +93,9 @@ namespace AstroShift.Manager
 
         private void FinishLevel() 
         {
-            if (isFinished) return; // Cegah pemanggilan ganda
+            if (isFinished) return;
             isFinished = true;
             currentDisplayProgress = 1f;
-            Debug.Log("Level Completed!");
 
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);

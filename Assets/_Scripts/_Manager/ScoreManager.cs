@@ -6,16 +6,16 @@ namespace AstroShift.Manager
     public class ScoreManager : MonoBehaviour
     {
         [Header("Score Settings")]
-        [SerializeField] private TextMeshProUGUI scoreText; // Referensi ke UI Text untuk menampilkan skor
-        [SerializeField] private Transform playerTransform; // Referensi ke transformasi player
+        [SerializeField] private TextMeshProUGUI scoreText;
+        [SerializeField] private Transform playerTransform;
 
-        private float StratPosX; // Posisi awal player pada sumbu X
-        private int currentScore; // Skor saat ini
+        private float StratPosX;
+        private int currentScore;
         
         void Start()
         {
             if (playerTransform == null) {
-                playerTransform = GameObject.FindGameObjectWithTag("Player").transform; // Mencari player berdasarkan tag jika belum diassign
+                playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
             }
             StratPosX = playerTransform.position.x;
         }
@@ -23,14 +23,13 @@ namespace AstroShift.Manager
         void Update()
         {
             if (playerTransform != null) {
-                // Hitung skor berdasarkan jarak yang ditempuh player dari posisi awal
                 currentScore = Mathf.FloorToInt(playerTransform.position.x - StratPosX);
-                scoreText.text = "Score: " + currentScore.ToString(); // Update teks skor di UI
+                scoreText.text = "Score: " + currentScore.ToString();
             }
         }
 
         public int GetCurrentScore() {
-            return currentScore; // Mengembalikan skor saat ini
+            return currentScore;
         }
     }
 }

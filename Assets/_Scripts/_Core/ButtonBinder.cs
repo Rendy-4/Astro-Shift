@@ -14,13 +14,13 @@ namespace AstroShift.Core
             Pause,
             Resume
         }
-        [SerializeField] private ButtonType buttonType; // Pilih jenis tombol di Inspector
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        [SerializeField] private ButtonType buttonType; 
+
         void Start()
         {
             Button button = GetComponent<Button>();
 
-            button.onClick.RemoveAllListeners(); // Hapus semua listener yang mungkin sudah ada untuk mencegah pemanggilan ganda
+            button.onClick.RemoveAllListeners();
 
             if (buttonType == ButtonType.Restart)
             {

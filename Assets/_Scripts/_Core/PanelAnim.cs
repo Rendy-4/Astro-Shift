@@ -40,5 +40,15 @@ namespace AstroShift.Core
                 
             }
         }
+
+        private void OnDisable()
+        {
+            rect.DOKill();
+        }
+
+        private void OnDestroy()
+        {
+            rect.DOKill();
+        }
     }    
 }

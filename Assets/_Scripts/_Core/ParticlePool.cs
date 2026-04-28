@@ -11,18 +11,18 @@ namespace AstroShift.Core
             _animator = GetComponent<Animator>();
         }
 
-        // Tambahkan parameter scale di sini
         public void Play(ObjectPool sourcePool, Vector3 scale) {
             _pool = sourcePool;
             
-            // Masalah 1: Reset/Set skala objek agar tidak "selalu besar"
             transform.localScale = scale;
 
-            _animator.Play("DustEffect", -1, 0f);
+            if (_animator == null || !_animator.isActiveAndEnabled) return;
+
+            _animator.Play("Dust_effect", 0, 0f);
 
             float duration = _animator.GetCurrentAnimatorStateInfo(0).length;
+            if (duration <= 0f) duration = 1f;
             
-            // Batalkan Invoke sebelumnya jika ada (untuk keamanan)
             CancelInvoke(nameof(ReturnToPool));
             Invoke(nameof(ReturnToPool), duration);
         }

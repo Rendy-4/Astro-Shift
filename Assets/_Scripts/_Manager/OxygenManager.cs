@@ -16,6 +16,7 @@ namespace AstroShift.Manager
 
         private float currentOxygen;
         private bool isDead = false;
+        private bool isGameScene = false;
 
         public static OxygenManager Instance { get; private set; }
 
@@ -42,10 +43,11 @@ namespace AstroShift.Manager
         }
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+            isGameScene = scene.name != "MainMenu";
             FindOxygenUI();
             isDead = false;
 
-            currentOxygen = maxOxygen; // Reset oksigen saat pindah scene
+            currentOxygen = maxOxygen;
         }
 
         private void FindOxygenUI() {
@@ -53,8 +55,6 @@ namespace AstroShift.Manager
             if (oxygenBarObj != null) {
                 oxygenBar = oxygenBarObj.GetComponent<Image>();
                 UpdateOxygenBar();
-            } else {
-                Debug.Log("Oxygen bar UI tidak ditemukan di scene!");
             }
         }
 
@@ -65,9 +65,7 @@ namespace AstroShift.Manager
 
         void Update()
         {
-            if (SceneManager.GetActiveScene().name == "MainMenu") return; // Jangan kurangi oksigen di menu utama
-            if (isDead) return;
-
+            if (!isGameScene || isDead) return;
             // Terus berkurang setiap detik
             currentOxygen -= oxygenDepletionRate * Time.deltaTime;
             currentOxygen = Mathf.Clamp(currentOxygen, 0f, maxOxygen);
@@ -88,9 +86,7 @@ namespace AstroShift.Manager
 
         private void OnOxygenEmpty()
         {
-            Debug.Log("Oksigen habis!");
-            // Bisa tambahkan efek kematian atau restart level di sini
-            PlayerController player = FindObjectOfType<PlayerController>();
+            PlayerController player = Object.FindFirstObjectByType<PlayerController>();
             if (player != null) player.Die();
         }
 
@@ -100,7 +96,6 @@ namespace AstroShift.Manager
             currentOxygen = Mathf.Clamp(currentOxygen + amount, 0f, maxOxygen);
             isDead = false;
             UpdateOxygenBar();
-            Debug.Log($"Oksigen diisi +{amount}. Sekarang: {currentOxygen}");
         }
     }
 }
