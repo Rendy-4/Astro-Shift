@@ -42,18 +42,18 @@ namespace AstroShift.Manager
                     if (objName == "music") musicSource = src;
                     if (objName == "sfx") sfxSource = src;
                 }
+                LoadSavedVolumes();
             } 
             else 
             {
                 Destroy(gameObject);
             }
-            LoadSavedVolumes();
         }
 
         private void LoadSavedVolumes()
         {
-            SetMusicVolume(PlayerPrefs.GetFloat(MUSIC_KEY, 1f));
-            SetSFXVolume(PlayerPrefs.GetFloat(SFX_KEY, 1f));
+            SetMusicVolume(PlayerPrefs.GetFloat(MUSIC_KEY, 0.5f));
+            SetSFXVolume(PlayerPrefs.GetFloat(SFX_KEY, 0.5f));
         }
 
         public void SetMusicVolume(float value)

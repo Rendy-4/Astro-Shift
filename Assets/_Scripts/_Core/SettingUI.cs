@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using AstroShift.Manager;
+using System.Collections;
 
 namespace AstroShift.Core
 {
@@ -13,9 +14,22 @@ namespace AstroShift.Core
         private void OnEnable() {
             if (SettingManager.Instance == null)
             {
-                Debug.Log("AudioManager.Instance is null");
+                StartCoroutine(WaitAndSetup());
                 return;
             }
+            SetUp();
+        }
+
+        private IEnumerator WaitAndSetup()
+        {
+            yield return null;
+            if (SettingManager.Instance != null) SetUp();
+        }
+
+        private void SetUp()
+        {
+            musicSlider.onValueChanged.RemoveAllListeners();
+            sfxSlider.onValueChanged.RemoveAllListeners();
             
             musicSlider.value = SettingManager.Instance.GetMusicVolume();
             sfxSlider.value = SettingManager.Instance.GetSFXVolume();
